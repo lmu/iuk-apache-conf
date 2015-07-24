@@ -1,0 +1,1466 @@
+<?xml version="1.0"?>
+<md:EntitiesDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" md:Name="urn:uni-muenchen:portal">
+	<!-- template fuer das Einfuegen der Signatur-->
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+	  <SignedInfo>
+	    <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+	    <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+	    <Reference URI="">
+	      <Transforms>
+		<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+		<Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+	      </Transforms>
+	      <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+	      <DigestValue>TzGzUXso58SatC6KGW8V35j09Ts=</DigestValue>
+	    </Reference>
+	    </SignedInfo>
+	  <SignatureValue>oCznBmq/G3NCSKGCul2TNq73VblG9HFm7EWrCFWzwDvvP8MLvoCHDUrR5igNgVCw
+fiuTarKTNwF+ewXcnGYiGrpa9xjW2nt6meEJB8lq+MC7QoukEkRuTiCYLa6Ks8nw
+lfYklrqpvwpcXvITN9Iuj7I4XcZQ3Ta7BOE3GC8KaUE=</SignatureValue>
+	  <KeyInfo>
+ 	    <KeyValue>
+<RSAKeyValue>
+<Modulus>
+zLKHQYUY2bYDPQIBVR5WJXa87WmqdMI3TD0STHR4MM+PQQcUfVFWQCcak/yHH2Og
+8w1w2gYePsYKULdaGW4nSH5hBro50nHAsxbsGd/8vvzHb9PPmSxa55KSlgHLJy2z
+MUaTvGzxffgPkpCnXoUn1NQh0qGv/WICzkTffJp8ssc=
+</Modulus>
+<Exponent>
+AQAB
+</Exponent>
+</RSAKeyValue>
+</KeyValue>
+	    <X509Data>
+<X509Certificate>MIICiTCCAfKgAwIBAgIESGzKJzANBgkqhkiG9w0BAQUFADCBiDELMAkGA1UEBhMC
+REUxDzANBgNVBAgTBkJheWVybjERMA8GA1UEBxMITXVlbmNoZW4xMTAvBgNVBAoT
+KEx1ZGl3Zy1NYXhpbWlsaWFucy1Vbml2ZXJzaXRhZXQgTXVlbmNoZW4xDjAMBgNV
+BAsTBUlJSUE1MRIwEAYDVQQDEwlmZWRzaWduZXIwHhcNMDgwNzAzMTI0NjMxWhcN
+MDgxMDAxMTI0NjMxWjCBiDELMAkGA1UEBhMCREUxDzANBgNVBAgTBkJheWVybjER
+MA8GA1UEBxMITXVlbmNoZW4xMTAvBgNVBAoTKEx1ZGl3Zy1NYXhpbWlsaWFucy1V
+bml2ZXJzaXRhZXQgTXVlbmNoZW4xDjAMBgNVBAsTBUlJSUE1MRIwEAYDVQQDEwlm
+ZWRzaWduZXIwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMyyh0GFGNm2Az0C
+AVUeViV2vO1pqnTCN0w9Ekx0eDDPj0EHFH1RVkAnGpP8hx9joPMNcNoGHj7GClC3
+WhluJ0h+YQa6OdJxwLMW7Bnf/L78x2/Tz5ksWueSkpYByyctszFGk7xs8X34D5KQ
+p16FJ9TUIdKhr/1iAs5E33yafLLHAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAYEjf
+5KZk66XTOrRtKb1n8LIPJ9DsdGso2NNMe6pJHZVOn1XcbQnsRzEOkV/f7FD0fA6a
+3mRUV/xQ26cx8gBbDlA6fU7c6UjwOJNJFp3aYF467pU3OkFP09aXsTm3gFGntzKf
+VwNUIanywbttyIKe4RsuDgwlXuSMqzd3MAGzUFs=</X509Certificate>
+</X509Data>
+	  </KeyInfo>
+	</Signature> 
+	<!--Ende  template fuer das Einfuegen der Signatur-->
+
+<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" entityID="urn:uni-muenchen.de:portal:idp">
+
+    <IDPSSODescriptor protocolSupportEnumeration="urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+
+        <Extensions>
+            <shibmd:Scope regexp="false">uni-muenchen.de</shibmd:Scope>
+        </Extensions>
+
+        <KeyDescriptor>
+            <ds:KeyInfo>
+                <ds:X509Data>
+                    <ds:X509Certificate>
+MIIDXDCCAkSgAwIBAgIVAPqt0+r772OzdtCYLosQlWAA7U/hMA0GCSqGSIb3DQEB
+BQUAMCcxJTAjBgNVBAMTHGxvZ2luLnBvcnRhbC51bmktbXVlbmNoZW4uZGUwHhcN
+MDgwNjI0MTUwNjI5WhcNMjgwNjI0MTUwNjI5WjAnMSUwIwYDVQQDExxsb2dpbi5w
+b3J0YWwudW5pLW11ZW5jaGVuLmRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEAk+lav7UC0oJPmbIkKPbEOHlVuHb2Mt2q363TjZ1svsYaQ7ZNO9J7v1X/
+ysKrYJRknfSvewtVutXFxYXFSPGfr6MB1N0spOuSwHEkzFykialDLrhVoe/CKJyM
+JQA1E36cPnujLvNnOSe+3BUw1N99sQSAD3fsHyTyDj8fQMw6HVxhbm0g5OPt4luu
+h0UDzrUaYkbGI5JYmdmY/K6Csjsnbq6ub3brFW7e/mqy2nSiXYZA2h7kltfUMyo/
+zQlULju/OtMfW8Bk5CVnhYq30IL/l/lM27kFdzlQRuPDu+T47CMlupc2gNtuUQEo
+Nv11mzrO6X9YtN9/jfhQG4wrAHCsxwIDAQABo38wfTBcBgNVHREEVTBTghxsb2dp
+bi5wb3J0YWwudW5pLW11ZW5jaGVuLmRlhjNodHRwczovL2xvZ2luLnBvcnRhbC51
+bmktbXVlbmNoZW4uZGUvaWRwL3NoaWJib2xldGgwHQYDVR0OBBYEFG3WcGGLSUW4
+mrRoCQEAVdyQDiiZMA0GCSqGSIb3DQEBBQUAA4IBAQBdLDT1xiUgAXzpWvlzjD+t
+Hish9eCKT/+wZdhAkNChkQdbfp1h9b6fGvbZ6SlFA/g11SCWZv7DAk1ynVtQmzuB
+DN0yW6AsKEwRtF88qdAnQhC+ZBFP457Wzp2bK2vHkpOo4pQ8SIMfXL27jFSTruWH
+0k4PYpHfyLlQrK1xw8nPLI+L0OWAkcFHG1D9WS68Fkb3TNwn7BCpO+I5qpIRI0vq
+/repRDqTjHCithDC1nPXJKj9lwmVtf60FByfXVpBdll58qb/CMcRNpqGXC8kbRzY
+lRBCQ6GAKX8rKHsqKVrsSlrQckEZca+SjVtSWZ4Z1f2O4cxpqBhvDGiabg0YZWJU
+
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+
+        </KeyDescriptor>
+         <KeyDescriptor>
+            <ds:KeyInfo>
+                <ds:X509Data>
+                    <ds:X509Certificate>
+MIIFUzCCBDugAwIBAgIEDIw04TANBgkqhkiG9w0BAQUFADCBkDELMAkGA1UEBhMC
+REUxDzANBgNVBAgTBkJheWVybjERMA8GA1UEBxMITXVlbmNoZW4xMTAvBgNVBAoT
+KEx1ZHdpZy1NYXhpbWlsaWFucy1Vbml2ZXJzaXRhZXQgTXVlbmNoZW4xDzANBgNV
+BAMTBkxNVS1DQTEZMBcGCSqGSIb3DQEJARYKcGtpQGxtdS5kZTAeFw0wODA3MDMx
+MTI2MTBaFw0xMDA3MDMxMTI2MTBaMIGbMQswCQYDVQQGEwJERTEPMA0GA1UECBMG
+QmF5ZXJuMREwDwYDVQQHEwhNdWVuY2hlbjExMC8GA1UEChMoTHVkd2lnLU1heGlt
+aWxpYW5zLVVuaXZlcnNpdGFldCBNdWVuY2hlbjEOMAwGA1UECxMFSUlJQTUxJTAj
+BgNVBAMTHGxvZ2luLnBvcnRhbC51bmktbXVlbmNoZW4uZGUwggEiMA0GCSqGSIb3
+DQEBAQUAA4IBDwAwggEKAoIBAQC6G/m8HckgWny3DypWJeX2mahdGk0tYcVmMnt+
+EfmTLFmRLALeUvwtcr0jW2jnmItBoQWSMAQyQ8HAMgmt/prtFzcQ6eUgHUd1QLnd
+iZjGAIw6UqC97Vldh0Zqjq5ZvBKSqQdFrxiTiuOitPbTe6LdrjWkvZv9WN25X+GK
+4bXjIjMzbqLNjPiDGsUAOhHDDXrgWhZ7VL1bKp8nGE+Am5EKohjaDx0yy7mjZy9d
+EKjoWyP0behrgiiHb0QK/Klq1jNNZGgC2iet7dGBH7VIs26A/yLJJVZOc94xeemR
+cVUVxOoyyKyApxCZaIv7Dg5EFaCIRAez+ToamAiT+k2esuy1AgMBAAGjggGmMIIB
+ojAJBgNVHRMEAjAAMAsGA1UdDwQEAwIE8DATBgNVHSUEDDAKBggrBgEFBQcDATAd
+BgNVHQ4EFgQUw7Z30RD69KLl7kGI01AeRIkuwsUwHwYDVR0jBBgwFoAUeYd4ai/6
+m7wjT5Smo3cdHg6UgA8wgYsGA1UdHwSBgzCBgDA+oDygOoY4aHR0cDovL2NkcDEu
+cGNhLmRmbi5kZS91bmktbXVlbmNoZW4tY2EvcHViL2NybC9jYWNybC5jcmwwPqA8
+oDqGOGh0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvdW5pLW11ZW5jaGVuLWNhL3B1Yi9j
+cmwvY2FjcmwuY3JsMIGkBggrBgEFBQcBAQSBlzCBlDBIBggrBgEFBQcwAoY8aHR0
+cDovL2NkcDEucGNhLmRmbi5kZS91bmktbXVlbmNoZW4tY2EvcHViL2NhY2VydC9j
+YWNlcnQuY3J0MEgGCCsGAQUFBzAChjxodHRwOi8vY2RwMi5wY2EuZGZuLmRlL3Vu
+aS1tdWVuY2hlbi1jYS9wdWIvY2FjZXJ0L2NhY2VydC5jcnQwDQYJKoZIhvcNAQEF
+BQADggEBAFqnG8HuB74NprwpXI3TrzGGOEnxqyKHFJqU0zcUn1xqRargcpEIwqHn
+mWNWFuEvTOAfb2flOeNZgcMd7g5OuSkFFIjC5Qt14mB1tiRwYbClh0KqK41QtR5X
+VHaYSRd1F0himdMjvlQ6odt8MBREwzTUqbnSX0e20ht/CGmGt2YahUFDYB7cAiXO
+d3iY4h/U6g5C8rsExMZLRn6R4w3fB+xQmcDOFeABefS8ZjpmbAYiJhkj0xEQYz5j
+0+gg8t0GBjCh9sXS1GKSB9fhySgrxLVBPfxPTmvLroxFzlXgO2mSBh9xBsS4MeYf
+Ribn+Cfo6zwLj52InGhP0sAAc3TX0Q0=
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </KeyDescriptor>
+	<!-- Schluessel ab Februar 2012 alles bis hierher sind alte -->
+         <KeyDescriptor>
+            <ds:KeyInfo>
+                <ds:X509Data>
+                    <ds:X509Certificate>
+MIIFXzCCBEegAwIBAgIHE2cwq5BJfzANBgkqhkiG9w0BAQUFADCBkDELMAkGA1UE
+BhMCREUxDzANBgNVBAgTBkJheWVybjERMA8GA1UEBxMITXVlbmNoZW4xMTAvBgNV
+BAoTKEx1ZHdpZy1NYXhpbWlsaWFucy1Vbml2ZXJzaXRhZXQgTXVlbmNoZW4xDzAN
+BgNVBAMTBkxNVS1DQTEZMBcGCSqGSIb3DQEJARYKcGtpQGxtdS5kZTAeFw0xMjAy
+MjQxNTU2MTJaFw0xNDAyMjQwMDAwMDBaMIGaMQswCQYDVQQGEwJERTEPMA0GA1UE
+CBMGQmF5ZXJuMREwDwYDVQQHEwhNdWVuY2hlbjExMC8GA1UEChMoTHVkd2lnLU1h
+eGltaWxpYW5zLVVuaXZlcnNpdGFldCBNdWVuY2hlbjENMAsGA1UECxMEVkkuNDEl
+MCMGA1UEAxMcbG9naW4ucG9ydGFsLnVuaS1tdWVuY2hlbi5kZTCCASIwDQYJKoZI
+hvcNAQEBBQADggEPADCCAQoCggEBAMNxU07XvrA0WyYoFWw6mxP+VMZHU5EuqLw2
+DLtfhrl9bOZbIH5qCVoeoNlQUuXm1vli2rbTlvPJmAODmh3KwenqkXJmqam9/Pp9
+Xz+3108g/cBjyVau1bETm39Xudnj3HuO8/GMP/QjN/j2fKCXtVfwXzAO3stO5BYL
+cyQ908o7Bov1tBhyhuLaWKPDrU0VrxrKl+jxpoBOCB3EBZol9+SnoRDoeX02ic9u
+O/Q4A/bzDVDI73fhUgN+8W/zptR5AmMbZw02AW7WY06liaIzsw7IB+RBiLueIx+e
+Ey20itl76Z2IUgN7bwenss0fIBrqB5rnw3FjfC1BHykYpatTjW0CAwEAAaOCAbAw
+ggGsMAkGA1UdEwQCMAAwCwYDVR0PBAQDAgXgMB0GA1UdJQQWMBQGCCsGAQUFBwMC
+BggrBgEFBQcDATAdBgNVHQ4EFgQUjr52mOBdfaIme2H3U49IyjM76oUwHwYDVR0j
+BBgwFoAUeYd4ai/6m7wjT5Smo3cdHg6UgA8wgYsGA1UdHwSBgzCBgDA+oDygOoY4
+aHR0cDovL2NkcDEucGNhLmRmbi5kZS91bmktbXVlbmNoZW4tY2EvcHViL2NybC9j
+YWNybC5jcmwwPqA8oDqGOGh0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvdW5pLW11ZW5j
+aGVuLWNhL3B1Yi9jcmwvY2FjcmwuY3JsMIGkBggrBgEFBQcBAQSBlzCBlDBIBggr
+BgEFBQcwAoY8aHR0cDovL2NkcDEucGNhLmRmbi5kZS91bmktbXVlbmNoZW4tY2Ev
+cHViL2NhY2VydC9jYWNlcnQuY3J0MEgGCCsGAQUFBzAChjxodHRwOi8vY2RwMi5w
+Y2EuZGZuLmRlL3VuaS1tdWVuY2hlbi1jYS9wdWIvY2FjZXJ0L2NhY2VydC5jcnQw
+DQYJKoZIhvcNAQEFBQADggEBABOwN4FIzRyls9FN3gHuWxvFCGJB2UYfFaz9sO8o
+V2Xib/sN6XtgKNeS/qwHg1TvxFR8OlAt6s/olOgGHnu6EbTZIaC/S9//jKRuTvrL
+/oCTwPaZ1fEUPkqqhIarzcN45ijyt3I/8C1D+M2clYHROWU5HrmnRZ9/hGGE+Vtw
+sFEkV2Z0SsN3cs8mX7QzyCHiSV/RN6eXnoak0ZEp/951bOsTzvm7V6d2uUDHcUq0
+fGQXdMev0AsBuUuVBEXtMKsSE0uTAnk0H2Flsa84LQREj78HpRK0CX6PVW2X5ng7
+8bP1FA++wxuW6SacvZQwqA+QRiP7DbvpjYLIdeAVeQ3bcBs=
+                   </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </KeyDescriptor>
+        <!-- Schluessel ab Februar 2014 alles bis hierher sind alte -->
+         <KeyDescriptor>
+            <ds:KeyInfo>
+                <ds:X509Data>
+                    <ds:X509Certificate>
+MIIF+DCCBOCgAwIBAgIHFxMvGxK7aTANBgkqhkiG9w0BAQUFADCBkDELMAkGA1UE
+BhMCREUxDzANBgNVBAgTBkJheWVybjERMA8GA1UEBxMITXVlbmNoZW4xMTAvBgNV
+BAoTKEx1ZHdpZy1NYXhpbWlsaWFucy1Vbml2ZXJzaXRhZXQgTXVlbmNoZW4xDzAN
+BgNVBAMTBkxNVS1DQTEZMBcGCSqGSIb3DQEJARYKcGtpQGxtdS5kZTAeFw0xNDAy
+MDYxNjAwMTJaFw0xNjAyMDYwMDAwMDBaMIGaMQswCQYDVQQGEwJERTEPMA0GA1UE
+CBMGQmF5ZXJuMREwDwYDVQQHEwhNdWVuY2hlbjExMC8GA1UEChMoTHVkd2lnLU1h
+eGltaWxpYW5zLVVuaXZlcnNpdGFldCBNdWVuY2hlbjENMAsGA1UECxMEVkkuNDEl
+MCMGA1UEAxMcbG9naW4ucG9ydGFsLnVuaS1tdWVuY2hlbi5kZTCCASIwDQYJKoZI
+hvcNAQEBBQADggEPADCCAQoCggEBALu/Cz/leNrE0sQcAQbvFYnoHXW+jyIjsD6l
+3Z84BZ09G8kktEZeVgi5sARxqc5L4j1zKKB18i5FD3r7e4y8h16cQozwvnIVmdXn
+9xxOISmJRiKCs0g4pvaXwAwSs5Dlz5eThqDjEwWy24szTDayDnJWlM/kG90CTEXz
+SWeTu3z/wWdR+7AbUNWx9/NYCreTbGTtqu1vzVAgBnx4nrZDbmxd2S+b8tnneN1r
+N/xC5i10eqteErqgptin4fz5N+AQAJTbaMVtA6U6TIIFJSxC5h/+3XbY/q42yHfE
+UlczSBJk5oajVz/qVAXiKeUSReIzX13thBwWfpzsFc6toWavKgMCAwEAAaOCAkkw
+ggJFMDkGA1UdIAQyMDAwEQYPKwYBBAGBrSGCLAEBBAMBMBEGDysGAQQBga0hgiwC
+AQQDATAIBgZngQwBAgIwCQYDVR0TBAIwADALBgNVHQ8EBAMCBeAwHQYDVR0lBBYw
+FAYIKwYBBQUHAwIGCCsGAQUFBwMBMB0GA1UdDgQWBBR2PpQ9egjoDvMZI072AFQq
+p+wEEDAfBgNVHSMEGDAWgBR5h3hqL/qbvCNPlKajdx0eDpSADzAnBgNVHREEIDAe
+ghxsb2dpbi5wb3J0YWwudW5pLW11ZW5jaGVuLmRlMIGLBgNVHR8EgYMwgYAwPqA8
+oDqGOGh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvdW5pLW11ZW5jaGVuLWNhL3B1Yi9j
+cmwvY2FjcmwuY3JsMD6gPKA6hjhodHRwOi8vY2RwMi5wY2EuZGZuLmRlL3VuaS1t
+dWVuY2hlbi1jYS9wdWIvY3JsL2NhY3JsLmNybDCB2QYIKwYBBQUHAQEEgcwwgckw
+MwYIKwYBBQUHMAGGJ2h0dHA6Ly9vY3NwLnBjYS5kZm4uZGUvT0NTUC1TZXJ2ZXIv
+T0NTUDBIBggrBgEFBQcwAoY8aHR0cDovL2NkcDEucGNhLmRmbi5kZS91bmktbXVl
+bmNoZW4tY2EvcHViL2NhY2VydC9jYWNlcnQuY3J0MEgGCCsGAQUFBzAChjxodHRw
+Oi8vY2RwMi5wY2EuZGZuLmRlL3VuaS1tdWVuY2hlbi1jYS9wdWIvY2FjZXJ0L2Nh
+Y2VydC5jcnQwDQYJKoZIhvcNAQEFBQADggEBAEDED3UVTp1JmJUZ/ri/SXGpFHlr
+bxOApF14tE8bEgSuywtU1TGxkBa3rrySpA78dqte3I0syOByIDcNXz79MEkx30lH
+TVawo6OlmfMZgjZfH3l9wIMNopFmcNiZeVDAedC+mlgg5Y8e0jkrLGpT1NWPEMEz
+ljRoiWANqUsgb9F4x74IqS/afmmD6OtWC/PH+H2fiqfq7ktVrLzkAui2jhyG/uei
+bQxfbksid3Fim7zAQSLSdgwAFxpHzXj3xkYSwAXVjErQtpaKPhchxLD48vijbBIn
+uQZvmazkTVSM4jAefSNoSMC9t41HIbDeOQrPfTaSVRk0pZy3tBEVVY8xoHI=
+                   </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </KeyDescriptor>
+
+
+       
+        <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://login.portal.uni-muenchen.de/login/profile/SAML1/SOAP/ArtifactResolution" index="1"/>
+
+        <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://login.portal.uni-muenchen.de/login/profile/SAML2/SOAP/ArtifactResolution" index="2"/>
+                                   
+        <NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+
+        <SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://login.portal.uni-muenchen.de/login/profile/Shibboleth/SSO"/>
+
+        
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://login.portal.uni-muenchen.de/login/profile/SAML2/POST/SSO"/>
+
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://login.portal.uni-muenchen.de/login/profile/SAML2/POST-SimpleSign/SSO"/>
+        
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://login.portal.uni-muenchen.de/login/profile/SAML2/Redirect/SSO"/>
+    </IDPSSODescriptor>
+
+    <AttributeAuthorityDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+
+        <Extensions>
+            <shibmd:Scope regexp="false">uni-muenchen.de</shibmd:Scope>
+        </Extensions>
+
+        <KeyDescriptor>
+            <ds:KeyInfo>
+                <ds:X509Data>
+                    <ds:X509Certificate>
+MIIDXDCCAkSgAwIBAgIVAPqt0+r772OzdtCYLosQlWAA7U/hMA0GCSqGSIb3DQEB
+BQUAMCcxJTAjBgNVBAMTHGxvZ2luLnBvcnRhbC51bmktbXVlbmNoZW4uZGUwHhcN
+MDgwNjI0MTUwNjI5WhcNMjgwNjI0MTUwNjI5WjAnMSUwIwYDVQQDExxsb2dpbi5w
+b3J0YWwudW5pLW11ZW5jaGVuLmRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEAk+lav7UC0oJPmbIkKPbEOHlVuHb2Mt2q363TjZ1svsYaQ7ZNO9J7v1X/
+ysKrYJRknfSvewtVutXFxYXFSPGfr6MB1N0spOuSwHEkzFykialDLrhVoe/CKJyM
+JQA1E36cPnujLvNnOSe+3BUw1N99sQSAD3fsHyTyDj8fQMw6HVxhbm0g5OPt4luu
+h0UDzrUaYkbGI5JYmdmY/K6Csjsnbq6ub3brFW7e/mqy2nSiXYZA2h7kltfUMyo/
+zQlULju/OtMfW8Bk5CVnhYq30IL/l/lM27kFdzlQRuPDu+T47CMlupc2gNtuUQEo
+Nv11mzrO6X9YtN9/jfhQG4wrAHCsxwIDAQABo38wfTBcBgNVHREEVTBTghxsb2dp
+bi5wb3J0YWwudW5pLW11ZW5jaGVuLmRlhjNodHRwczovL2xvZ2luLnBvcnRhbC51
+bmktbXVlbmNoZW4uZGUvaWRwL3NoaWJib2xldGgwHQYDVR0OBBYEFG3WcGGLSUW4
+mrRoCQEAVdyQDiiZMA0GCSqGSIb3DQEBBQUAA4IBAQBdLDT1xiUgAXzpWvlzjD+t
+Hish9eCKT/+wZdhAkNChkQdbfp1h9b6fGvbZ6SlFA/g11SCWZv7DAk1ynVtQmzuB
+DN0yW6AsKEwRtF88qdAnQhC+ZBFP457Wzp2bK2vHkpOo4pQ8SIMfXL27jFSTruWH
+0k4PYpHfyLlQrK1xw8nPLI+L0OWAkcFHG1D9WS68Fkb3TNwn7BCpO+I5qpIRI0vq
+/repRDqTjHCithDC1nPXJKj9lwmVtf60FByfXVpBdll58qb/CMcRNpqGXC8kbRzY
+lRBCQ6GAKX8rKHsqKVrsSlrQckEZca+SjVtSWZ4Z1f2O4cxpqBhvDGiabg0YZWJU
+
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </KeyDescriptor>
+
+        <KeyDescriptor>
+            <ds:KeyInfo>
+                <ds:X509Data>
+                    <ds:X509Certificate>
+MIIFUzCCBDugAwIBAgIEDIw04TANBgkqhkiG9w0BAQUFADCBkDELMAkGA1UEBhMC
+REUxDzANBgNVBAgTBkJheWVybjERMA8GA1UEBxMITXVlbmNoZW4xMTAvBgNVBAoT
+KEx1ZHdpZy1NYXhpbWlsaWFucy1Vbml2ZXJzaXRhZXQgTXVlbmNoZW4xDzANBgNV
+BAMTBkxNVS1DQTEZMBcGCSqGSIb3DQEJARYKcGtpQGxtdS5kZTAeFw0wODA3MDMx
+MTI2MTBaFw0xMDA3MDMxMTI2MTBaMIGbMQswCQYDVQQGEwJERTEPMA0GA1UECBMG
+QmF5ZXJuMREwDwYDVQQHEwhNdWVuY2hlbjExMC8GA1UEChMoTHVkd2lnLU1heGlt
+aWxpYW5zLVVuaXZlcnNpdGFldCBNdWVuY2hlbjEOMAwGA1UECxMFSUlJQTUxJTAj
+BgNVBAMTHGxvZ2luLnBvcnRhbC51bmktbXVlbmNoZW4uZGUwggEiMA0GCSqGSIb3
+DQEBAQUAA4IBDwAwggEKAoIBAQC6G/m8HckgWny3DypWJeX2mahdGk0tYcVmMnt+
+EfmTLFmRLALeUvwtcr0jW2jnmItBoQWSMAQyQ8HAMgmt/prtFzcQ6eUgHUd1QLnd
+iZjGAIw6UqC97Vldh0Zqjq5ZvBKSqQdFrxiTiuOitPbTe6LdrjWkvZv9WN25X+GK
+4bXjIjMzbqLNjPiDGsUAOhHDDXrgWhZ7VL1bKp8nGE+Am5EKohjaDx0yy7mjZy9d
+EKjoWyP0behrgiiHb0QK/Klq1jNNZGgC2iet7dGBH7VIs26A/yLJJVZOc94xeemR
+cVUVxOoyyKyApxCZaIv7Dg5EFaCIRAez+ToamAiT+k2esuy1AgMBAAGjggGmMIIB
+ojAJBgNVHRMEAjAAMAsGA1UdDwQEAwIE8DATBgNVHSUEDDAKBggrBgEFBQcDATAd
+BgNVHQ4EFgQUw7Z30RD69KLl7kGI01AeRIkuwsUwHwYDVR0jBBgwFoAUeYd4ai/6
+m7wjT5Smo3cdHg6UgA8wgYsGA1UdHwSBgzCBgDA+oDygOoY4aHR0cDovL2NkcDEu
+cGNhLmRmbi5kZS91bmktbXVlbmNoZW4tY2EvcHViL2NybC9jYWNybC5jcmwwPqA8
+oDqGOGh0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvdW5pLW11ZW5jaGVuLWNhL3B1Yi9j
+cmwvY2FjcmwuY3JsMIGkBggrBgEFBQcBAQSBlzCBlDBIBggrBgEFBQcwAoY8aHR0
+cDovL2NkcDEucGNhLmRmbi5kZS91bmktbXVlbmNoZW4tY2EvcHViL2NhY2VydC9j
+YWNlcnQuY3J0MEgGCCsGAQUFBzAChjxodHRwOi8vY2RwMi5wY2EuZGZuLmRlL3Vu
+aS1tdWVuY2hlbi1jYS9wdWIvY2FjZXJ0L2NhY2VydC5jcnQwDQYJKoZIhvcNAQEF
+BQADggEBAFqnG8HuB74NprwpXI3TrzGGOEnxqyKHFJqU0zcUn1xqRargcpEIwqHn
+mWNWFuEvTOAfb2flOeNZgcMd7g5OuSkFFIjC5Qt14mB1tiRwYbClh0KqK41QtR5X
+VHaYSRd1F0himdMjvlQ6odt8MBREwzTUqbnSX0e20ht/CGmGt2YahUFDYB7cAiXO
+d3iY4h/U6g5C8rsExMZLRn6R4w3fB+xQmcDOFeABefS8ZjpmbAYiJhkj0xEQYz5j
+0+gg8t0GBjCh9sXS1GKSB9fhySgrxLVBPfxPTmvLroxFzlXgO2mSBh9xBsS4MeYf
+Ribn+Cfo6zwLj52InGhP0sAAc3TX0Q0=
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </KeyDescriptor>
+	<!-- Schluessel ab Februar 2012 alles bis hierher sind alte -->
+         <KeyDescriptor>
+            <ds:KeyInfo>
+                <ds:X509Data>
+                    <ds:X509Certificate>
+MIIFXzCCBEegAwIBAgIHE2cwq5BJfzANBgkqhkiG9w0BAQUFADCBkDELMAkGA1UE
+BhMCREUxDzANBgNVBAgTBkJheWVybjERMA8GA1UEBxMITXVlbmNoZW4xMTAvBgNV
+BAoTKEx1ZHdpZy1NYXhpbWlsaWFucy1Vbml2ZXJzaXRhZXQgTXVlbmNoZW4xDzAN
+BgNVBAMTBkxNVS1DQTEZMBcGCSqGSIb3DQEJARYKcGtpQGxtdS5kZTAeFw0xMjAy
+MjQxNTU2MTJaFw0xNDAyMjQwMDAwMDBaMIGaMQswCQYDVQQGEwJERTEPMA0GA1UE
+CBMGQmF5ZXJuMREwDwYDVQQHEwhNdWVuY2hlbjExMC8GA1UEChMoTHVkd2lnLU1h
+eGltaWxpYW5zLVVuaXZlcnNpdGFldCBNdWVuY2hlbjENMAsGA1UECxMEVkkuNDEl
+MCMGA1UEAxMcbG9naW4ucG9ydGFsLnVuaS1tdWVuY2hlbi5kZTCCASIwDQYJKoZI
+hvcNAQEBBQADggEPADCCAQoCggEBAMNxU07XvrA0WyYoFWw6mxP+VMZHU5EuqLw2
+DLtfhrl9bOZbIH5qCVoeoNlQUuXm1vli2rbTlvPJmAODmh3KwenqkXJmqam9/Pp9
+Xz+3108g/cBjyVau1bETm39Xudnj3HuO8/GMP/QjN/j2fKCXtVfwXzAO3stO5BYL
+cyQ908o7Bov1tBhyhuLaWKPDrU0VrxrKl+jxpoBOCB3EBZol9+SnoRDoeX02ic9u
+O/Q4A/bzDVDI73fhUgN+8W/zptR5AmMbZw02AW7WY06liaIzsw7IB+RBiLueIx+e
+Ey20itl76Z2IUgN7bwenss0fIBrqB5rnw3FjfC1BHykYpatTjW0CAwEAAaOCAbAw
+ggGsMAkGA1UdEwQCMAAwCwYDVR0PBAQDAgXgMB0GA1UdJQQWMBQGCCsGAQUFBwMC
+BggrBgEFBQcDATAdBgNVHQ4EFgQUjr52mOBdfaIme2H3U49IyjM76oUwHwYDVR0j
+BBgwFoAUeYd4ai/6m7wjT5Smo3cdHg6UgA8wgYsGA1UdHwSBgzCBgDA+oDygOoY4
+aHR0cDovL2NkcDEucGNhLmRmbi5kZS91bmktbXVlbmNoZW4tY2EvcHViL2NybC9j
+YWNybC5jcmwwPqA8oDqGOGh0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvdW5pLW11ZW5j
+aGVuLWNhL3B1Yi9jcmwvY2FjcmwuY3JsMIGkBggrBgEFBQcBAQSBlzCBlDBIBggr
+BgEFBQcwAoY8aHR0cDovL2NkcDEucGNhLmRmbi5kZS91bmktbXVlbmNoZW4tY2Ev
+cHViL2NhY2VydC9jYWNlcnQuY3J0MEgGCCsGAQUFBzAChjxodHRwOi8vY2RwMi5w
+Y2EuZGZuLmRlL3VuaS1tdWVuY2hlbi1jYS9wdWIvY2FjZXJ0L2NhY2VydC5jcnQw
+DQYJKoZIhvcNAQEFBQADggEBABOwN4FIzRyls9FN3gHuWxvFCGJB2UYfFaz9sO8o
+V2Xib/sN6XtgKNeS/qwHg1TvxFR8OlAt6s/olOgGHnu6EbTZIaC/S9//jKRuTvrL
+/oCTwPaZ1fEUPkqqhIarzcN45ijyt3I/8C1D+M2clYHROWU5HrmnRZ9/hGGE+Vtw
+sFEkV2Z0SsN3cs8mX7QzyCHiSV/RN6eXnoak0ZEp/951bOsTzvm7V6d2uUDHcUq0
+fGQXdMev0AsBuUuVBEXtMKsSE0uTAnk0H2Flsa84LQREj78HpRK0CX6PVW2X5ng7
+8bP1FA++wxuW6SacvZQwqA+QRiP7DbvpjYLIdeAVeQ3bcBs=
+                   </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </KeyDescriptor>
+
+        <AttributeService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://login.portal.uni-muenchen.de/login/profile/SAML1/SOAP/AttributeQuery"/>
+        
+        <AttributeService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://login.portal.uni-muenchen.de/login/profile/SAML2/SOAP/AttributeQuery"/>
+        
+        <NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>    
+    </AttributeAuthorityDescriptor>
+    
+</EntityDescriptor><md:EntityDescriptor ID="_2cf9b2f25b779ef6680035f72767756255f0d5b2" entityID="https://login.portal.uni-muenchen.de/ea">
+
+  <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+  </md:Extensions>
+
+  <md:SPSSODescriptor AuthnRequestsSigned="1" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:Extensions>
+      <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://login.portal.uni-muenchen.de/sp/Login"/>
+    </md:Extensions>
+    <md:KeyDescriptor>
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:KeyName>login.portal.uni-muenchen.de</ds:KeyName>
+        <ds:X509Data>
+          <ds:X509SubjectName>CN=login.portal.uni-muenchen.de,OU=VI.4,O=Ludwig-Maximilians-Universitaet Muenchen,L=Muenchen,ST=Bayern,C=DE</ds:X509SubjectName>
+          <ds:X509Certificate>MIIFXzCCBEegAwIBAgIHE2cwq5BJfzANBgkqhkiG9w0BAQUFADCBkDELMAkGA1UE
+BhMCREUxDzANBgNVBAgTBkJheWVybjERMA8GA1UEBxMITXVlbmNoZW4xMTAvBgNV
+BAoTKEx1ZHdpZy1NYXhpbWlsaWFucy1Vbml2ZXJzaXRhZXQgTXVlbmNoZW4xDzAN
+BgNVBAMTBkxNVS1DQTEZMBcGCSqGSIb3DQEJARYKcGtpQGxtdS5kZTAeFw0xMjAy
+MjQxNTU2MTJaFw0xNDAyMjQwMDAwMDBaMIGaMQswCQYDVQQGEwJERTEPMA0GA1UE
+CBMGQmF5ZXJuMREwDwYDVQQHEwhNdWVuY2hlbjExMC8GA1UEChMoTHVkd2lnLU1h
+eGltaWxpYW5zLVVuaXZlcnNpdGFldCBNdWVuY2hlbjENMAsGA1UECxMEVkkuNDEl
+MCMGA1UEAxMcbG9naW4ucG9ydGFsLnVuaS1tdWVuY2hlbi5kZTCCASIwDQYJKoZI
+hvcNAQEBBQADggEPADCCAQoCggEBAMNxU07XvrA0WyYoFWw6mxP+VMZHU5EuqLw2
+DLtfhrl9bOZbIH5qCVoeoNlQUuXm1vli2rbTlvPJmAODmh3KwenqkXJmqam9/Pp9
+Xz+3108g/cBjyVau1bETm39Xudnj3HuO8/GMP/QjN/j2fKCXtVfwXzAO3stO5BYL
+cyQ908o7Bov1tBhyhuLaWKPDrU0VrxrKl+jxpoBOCB3EBZol9+SnoRDoeX02ic9u
+O/Q4A/bzDVDI73fhUgN+8W/zptR5AmMbZw02AW7WY06liaIzsw7IB+RBiLueIx+e
+Ey20itl76Z2IUgN7bwenss0fIBrqB5rnw3FjfC1BHykYpatTjW0CAwEAAaOCAbAw
+ggGsMAkGA1UdEwQCMAAwCwYDVR0PBAQDAgXgMB0GA1UdJQQWMBQGCCsGAQUFBwMC
+BggrBgEFBQcDATAdBgNVHQ4EFgQUjr52mOBdfaIme2H3U49IyjM76oUwHwYDVR0j
+BBgwFoAUeYd4ai/6m7wjT5Smo3cdHg6UgA8wgYsGA1UdHwSBgzCBgDA+oDygOoY4
+aHR0cDovL2NkcDEucGNhLmRmbi5kZS91bmktbXVlbmNoZW4tY2EvcHViL2NybC9j
+YWNybC5jcmwwPqA8oDqGOGh0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvdW5pLW11ZW5j
+aGVuLWNhL3B1Yi9jcmwvY2FjcmwuY3JsMIGkBggrBgEFBQcBAQSBlzCBlDBIBggr
+BgEFBQcwAoY8aHR0cDovL2NkcDEucGNhLmRmbi5kZS91bmktbXVlbmNoZW4tY2Ev
+cHViL2NhY2VydC9jYWNlcnQuY3J0MEgGCCsGAQUFBzAChjxodHRwOi8vY2RwMi5w
+Y2EuZGZuLmRlL3VuaS1tdWVuY2hlbi1jYS9wdWIvY2FjZXJ0L2NhY2VydC5jcnQw
+DQYJKoZIhvcNAQEFBQADggEBABOwN4FIzRyls9FN3gHuWxvFCGJB2UYfFaz9sO8o
+V2Xib/sN6XtgKNeS/qwHg1TvxFR8OlAt6s/olOgGHnu6EbTZIaC/S9//jKRuTvrL
+/oCTwPaZ1fEUPkqqhIarzcN45ijyt3I/8C1D+M2clYHROWU5HrmnRZ9/hGGE+Vtw
+sFEkV2Z0SsN3cs8mX7QzyCHiSV/RN6eXnoak0ZEp/951bOsTzvm7V6d2uUDHcUq0
+fGQXdMev0AsBuUuVBEXtMKsSE0uTAnk0H2Flsa84LQREj78HpRK0CX6PVW2X5ng7
+8bP1FA++wxuW6SacvZQwqA+QRiP7DbvpjYLIdeAVeQ3bcBs=
+</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+    </md:KeyDescriptor>
+    <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://login.portal.uni-muenchen.de/sp/Artifact/SOAP" index="1"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://login.portal.uni-muenchen.de/sp/SLO/Artifact"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://login.portal.uni-muenchen.de/sp/SLO/POST"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://login.portal.uni-muenchen.de/sp/SLO/Redirect"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://login.portal.uni-muenchen.de/sp/SLO/SOAP"/>
+    <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://login.portal.uni-muenchen.de/sp/NIM/Artifact"/>
+    <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://login.portal.uni-muenchen.de/sp/NIM/POST"/>
+    <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://login.portal.uni-muenchen.de/sp/NIM/Redirect"/>
+    <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://login.portal.uni-muenchen.de/sp/NIM/SOAP"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://login.portal.uni-muenchen.de/sp/SAML2/Artifact" index="3"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://login.portal.uni-muenchen.de/sp/SAML2/ECP" index="4"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://login.portal.uni-muenchen.de/sp/SAML2/POST" index="5"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://login.portal.uni-muenchen.de/sp/SAML2/POST-SimpleSign" index="6"/>
+  </md:SPSSODescriptor>
+
+</md:EntityDescriptor><md:EntityDescriptor ID="_ddbdced5a31b026d241db11e38148152f87f36ca" entityID="urn:schlamm.sz:mailbox">
+
+  <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+  </md:Extensions>
+
+  <md:SPSSODescriptor AuthnRequestsSigned="1" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:Extensions>
+      <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://mailbox.portal.uni-muenchen.de/sp/Login"/>
+    </md:Extensions>
+    <md:KeyDescriptor>
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:KeyName>mailbox.portal.uni-muenchen.de</ds:KeyName>
+        <ds:X509Data>
+          <ds:X509SubjectName>CN=mailbox.portal.uni-muenchen.de,OU=VI.4,O=Ludwig-Maximilians-Universitaet Muenchen,L=Muenchen,ST=Bayern,C=DE</ds:X509SubjectName>
+          <ds:X509Certificate>MIIFVDCCBDygAwIBAgIEEEBS7TANBgkqhkiG9w0BAQUFADCBkDELMAkGA1UEBhMC
+REUxDzANBgNVBAgTBkJheWVybjERMA8GA1UEBxMITXVlbmNoZW4xMTAvBgNVBAoT
+KEx1ZHdpZy1NYXhpbWlsaWFucy1Vbml2ZXJzaXRhZXQgTXVlbmNoZW4xDzANBgNV
+BAMTBkxNVS1DQTEZMBcGCSqGSIb3DQEJARYKcGtpQGxtdS5kZTAeFw0xMDA2MjIx
+NTIzMDlaFw0xMjA2MjExNTIzMDlaMIGcMQswCQYDVQQGEwJERTEPMA0GA1UECBMG
+QmF5ZXJuMREwDwYDVQQHEwhNdWVuY2hlbjExMC8GA1UEChMoTHVkd2lnLU1heGlt
+aWxpYW5zLVVuaXZlcnNpdGFldCBNdWVuY2hlbjENMAsGA1UECxMEVkkuNDEnMCUG
+A1UEAxMebWFpbGJveC5wb3J0YWwudW5pLW11ZW5jaGVuLmRlMIIBIjANBgkqhkiG
+9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtm1s5prKAtYnR3eG77RWBYcNN7Zwt35Lryus
+/ElVNlS01HfjQk+P5KJrnLPtY+qWVw2eZCdROjTsl6PEqam4PkduxCY1YAHxDuKV
+AAloMe0BSlnNF5JZ873jqAdmXP6Vl0lmZ90EbOrGJ7jr/KY3o22GwysN1RB8ermy
+CrlWbLLGH1Dy1HwunAdWu/4AuuvQpKEbkbL0tzEN0iYZeb2KmnTq+uSGdQEHbztn
+7/1+0TP6GnqcgV1z/8uWAqRJsB9rJtuhhE2VsWbSf7M5D1ClBtP8poDbFAuyhwqt
+pFhisB61Stf8Of7+3rUFSZ7eqlyd2Du8bxe2PVZyqg1+6CAkywIDAQABo4IBpjCC
+AaIwCQYDVR0TBAIwADALBgNVHQ8EBAMCBPAwEwYDVR0lBAwwCgYIKwYBBQUHAwEw
+HQYDVR0OBBYEFKBPBXFQJBTi/pcQ4i1f2lLhnHn4MB8GA1UdIwQYMBaAFHmHeGov
++pu8I0+UpqN3HR4OlIAPMIGLBgNVHR8EgYMwgYAwPqA8oDqGOGh0dHA6Ly9jZHAx
+LnBjYS5kZm4uZGUvdW5pLW11ZW5jaGVuLWNhL3B1Yi9jcmwvY2FjcmwuY3JsMD6g
+PKA6hjhodHRwOi8vY2RwMi5wY2EuZGZuLmRlL3VuaS1tdWVuY2hlbi1jYS9wdWIv
+Y3JsL2NhY3JsLmNybDCBpAYIKwYBBQUHAQEEgZcwgZQwSAYIKwYBBQUHMAKGPGh0
+dHA6Ly9jZHAxLnBjYS5kZm4uZGUvdW5pLW11ZW5jaGVuLWNhL3B1Yi9jYWNlcnQv
+Y2FjZXJ0LmNydDBIBggrBgEFBQcwAoY8aHR0cDovL2NkcDIucGNhLmRmbi5kZS91
+bmktbXVlbmNoZW4tY2EvcHViL2NhY2VydC9jYWNlcnQuY3J0MA0GCSqGSIb3DQEB
+BQUAA4IBAQChU7hL1oKXId7XEuxBwHmcuYjOL8pE8z61Z9cTugSJVUR3tHMXstSB
+/42TIJh3ON+4QYSa6AANisu3tenpc1aq+HaXLKC1pFpOuVuD7QsqShFTDozQtSWj
+YpAGcTgl9FFZpXE+xEgE1Zq84hS8NwtuDAlLhZ1bc9Rgg30FvrzkqtgXKwNTtqz+
+yFHclyqvO3VYsumUxtBq+40hFJBv/A44d43+Zhz4MNUm977FuzIFsNaREjmJNP4w
+O5IvSsuQqKUKuaHYjccYNIIbq2EwT1zZJVIRIzvCVzPa7s7Auqrrnd6JV1A7QgA7
+pSUTbHuDIynF+j1YfHcH0PYERjZhP4cr
+</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+    </md:KeyDescriptor>
+    <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://mailbox.portal.uni-muenchen.de/sp/Artifact/SOAP" index="1"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://mailbox.portal.uni-muenchen.de/sp/SLO/Artifact"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://mailbox.portal.uni-muenchen.de/sp/SLO/POST"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://mailbox.portal.uni-muenchen.de/sp/SLO/Redirect"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://mailbox.portal.uni-muenchen.de/sp/SLO/SOAP"/>
+    <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://mailbox.portal.uni-muenchen.de/sp/NIM/Artifact"/>
+    <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://mailbox.portal.uni-muenchen.de/sp/NIM/POST"/>
+    <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://mailbox.portal.uni-muenchen.de/sp/NIM/Redirect"/>
+    <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://mailbox.portal.uni-muenchen.de/sp/NIM/SOAP"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://mailbox.portal.uni-muenchen.de/sp/SAML2/Artifact" index="3"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://mailbox.portal.uni-muenchen.de/sp/SAML2/ECP" index="4"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://mailbox.portal.uni-muenchen.de/sp/SAML2/POST" index="5"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://mailbox.portal.uni-muenchen.de/sp/SAML2/POST-SimpleSign" index="6"/>
+  </md:SPSSODescriptor>
+
+</md:EntityDescriptor><md:EntityDescriptor ID="_ab2b2b8f5d969e2715e40a7eb0a980865491dac0" entityID="urn:portal.lmu.de:lsfssotest">
+
+  <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+  </md:Extensions>
+
+  <md:SPSSODescriptor AuthnRequestsSigned="1" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:Extensions>
+      <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://lsf2.verwaltung.uni-muenchen.de/sp/Login"/>
+    </md:Extensions>
+    <md:KeyDescriptor>
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:KeyName>lsf2.verwaltung.uni-muenchen.de</ds:KeyName>
+        <ds:X509Data>
+          <ds:X509SubjectName>CN=lsf2.verwaltung.uni-muenchen.de,O=My Company Ltd,L=Newbury,ST=Berkshire,C=GB</ds:X509SubjectName>
+          <ds:X509Certificate>MIIFkzCCBHugAwIBAgIkAhwR/6RdQoP+rcGggzmcKdEWCANt/Ya8fy3wwzsFAgIQ
+Rk6TMA0GCSqGSIb3DQEBBQUAMDMxFTATBgNVBAoTDFVOSS1NVUVOQ0hFTjEaMBgG
+A1UECxMRT3JnYW5pemF0aW9uYWwgQ0EwHhcNMTExMjIxMTI0NTAwWhcNMTMxMjIx
+MTI0NTAwWjB2MQswCQYDVQQGEwJHQjESMBAGA1UECBMJQmVya3NoaXJlMRAwDgYD
+VQQHEwdOZXdidXJ5MRcwFQYDVQQKEw5NeSBDb21wYW55IEx0ZDEoMCYGA1UEAxMf
+bHNmMi52ZXJ3YWx0dW5nLnVuaS1tdWVuY2hlbi5kZTCCASIwDQYJKoZIhvcNAQEB
+BQADggEPADCCAQoCggEBALDgpj3rL14wVVAmpvwLidBXG4rM+9h5L9Bpk8smGKY6
++IkBMLRBdU2QpZf2YZRzgDQ731AVfY0Dk4GFgG/REQFpUPnqyZlrpFBZ4cWulyEu
+TlSuB08KVxkYJaXJ/ivT6rFnsnrb06WHYr7d5VFzFZ425SMpKMxAwP5sSw80cL6g
+KoZtt9Bi3PT+RLFCbB7aYGk7S9mnudGJI0JpPArD5N/lE8+/tm5MCvisOP2TaaFm
+5qO9LjVzLtX3H6cHuXn7gWh/3RQKPuBFgItjWFcvFB4JANFLXAVI/JrzG4Npk56Z
+brBwlvL1z3sez1652aP/460nWiahtEDgnRkz7X0kxJ0CAwEAAaOCAkowggJGMB0G
+A1UdDgQWBBTtN5fTAGZ13OoFHTKPAO8T6Vj5yjAfBgNVHSMEGDAWgBT8kXBofShU
+INW3Ez6rCi4wEXvaKzAOBgNVHQ8BAf8EBAMCBaAwDAYDVR0TAQH/BAIwADCCAcwG
+C2CGSAGG+DcBCQQBBIIBuzCCAbcEAgEAAQH/Ex1Ob3ZlbGwgU2VjdXJpdHkgQXR0
+cmlidXRlKHRtKRZDaHR0cDovL2RldmVsb3Blci5ub3ZlbGwuY29tL3JlcG9zaXRv
+cnkvYXR0cmlidXRlcy9jZXJ0YXR0cnNfdjEwLmh0bTCCAUigGgEBADAIMAYCAQEC
+AQAwCDAGAgEBAgEAAgEAoRoBAQAwCDAGAgEBAgEAMAgwBgIBAQIBAAIBAKIGAgEA
+AQH/o4IBBKBYAgECAgIA/wIBAAMNAIAAAAAAAAAAAAAAAAMJAIAAAAAAAAAAMBgw
+EAIBAAIIf/////////8BAQACBAbw30gwGDAQAgEAAgh//////////wEBAAIEBvDf
+SKFYAgECAgIA/wIBAAMNAEAAAAAAAAAAAAAAAAMJAEAAAAAAAAAAMBgwEAIBAAII
+f/////////8BAQACBBH6qE8wGDAQAgEAAgh//////////wEBAAIEEfqoT6JOMEwC
+AQICAQACAgD/Aw0AgAAAAAAAAAAAAAAAAwkAgAAAAAAAAAAwEjAQAgEAAgh/////
+/////wEBADASMBACAQACCH//////////AQEAMBYGA1UdJQEB/wQMMAoGCCsGAQUF
+BwMBMA0GCSqGSIb3DQEBBQUAA4IBAQC8JREEkrlDckN+cyE46xR+H43GTdCM45bq
+E2BJAQhbasJVZj0Enk8M/+ULNHn2inplUuI45d6VloTAkiwuMmQklfGTtd3xytZq
+6gyP01XrN9pReYzK6UE69wmAQvNsVCmbOATTAzM/sQfuGhDLDrJveml7ZK3wrg0f
+6j5pSNgp8yBxRLx+KbtQwnpVpTFA43K50es4G305S3BUKEb0L63w32ynrHIIkizh
+O61xh5R1VNckoN+JVfgfLYmD36u59qE+CIJW++va0PXNb/Sdludicui9HH3BHVoJ
+A8g+vy29f2RN4znxWlH8Wi3t3WbU4oEkLsnCwU23Cbnziw+S9qoS
+</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+    </md:KeyDescriptor>
+    <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://lsf2.verwaltung.uni-muenchen.de/sp/Artifact/SOAP" index="1"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://lsf2.verwaltung.uni-muenchen.de/sp/SLO/Artifact"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://lsf2.verwaltung.uni-muenchen.de/sp/SLO/POST"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://lsf2.verwaltung.uni-muenchen.de/sp/SLO/Redirect"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://lsf2.verwaltung.uni-muenchen.de/sp/SLO/SOAP"/>
+    <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://lsf2.verwaltung.uni-muenchen.de/sp/NIM/Artifact"/>
+    <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://lsf2.verwaltung.uni-muenchen.de/sp/NIM/POST"/>
+    <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://lsf2.verwaltung.uni-muenchen.de/sp/NIM/Redirect"/>
+    <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://lsf2.verwaltung.uni-muenchen.de/sp/NIM/SOAP"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://lsf2.verwaltung.uni-muenchen.de/sp/SAML2/Artifact" index="3"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://lsf2.verwaltung.uni-muenchen.de/sp/SAML2/ECP" index="4"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://lsf2.verwaltung.uni-muenchen.de/sp/SAML2/POST" index="5"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://lsf2.verwaltung.uni-muenchen.de/sp/SAML2/POST-SimpleSign" index="6"/>
+  </md:SPSSODescriptor>
+
+</md:EntityDescriptor><EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" entityID="urn:uni-muenchen.de:iuk:zuvidp1">
+
+    <IDPSSODescriptor protocolSupportEnumeration="urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+
+        <Extensions>
+            <shibmd:Scope regexp="false">uni-muenchen.de</shibmd:Scope>
+        </Extensions>
+	<!-- Inhalt von /etc/pki/tls/certs/servercerts/idp.zuv.uni-muenchen.de_cert.pem -->
+         <KeyDescriptor use="signing">
+            <ds:KeyInfo>
+                <ds:X509Data>
+                    <ds:X509Certificate>
+MIIGBDCCBOygAwIBAgIHGTNceE/fFjANBgkqhkiG9w0BAQsFADCBkDELMAkGA1UE
+BhMCREUxDzANBgNVBAgTBkJheWVybjERMA8GA1UEBxMITXVlbmNoZW4xMTAvBgNV
+BAoTKEx1ZHdpZy1NYXhpbWlsaWFucy1Vbml2ZXJzaXRhZXQgTXVlbmNoZW4xDzAN
+BgNVBAMTBkxNVS1DQTEZMBcGCSqGSIb3DQEJARYKcGtpQGxtdS5kZTAeFw0xNTAz
+MjYxMDI2NDlaFw0xNzAzMjUyMzAwMDBaMIGVMQswCQYDVQQGEwJERTEPMA0GA1UE
+CAwGQmF5ZXJuMREwDwYDVQQHDAhNdWVuY2hlbjExMC8GA1UECgwoTHVkd2lnLU1h
+eGltaWxpYW5zLVVuaXZlcnNpdGFldCBNdWVuY2hlbjENMAsGA1UECwwEVkkuNDEg
+MB4GA1UEAwwXaWRwLnp1di51bmktbXVlbmNoZW4uZGUwggEiMA0GCSqGSIb3DQEB
+AQUAA4IBDwAwggEKAoIBAQCypSHxn78atXxkTwUGHS4i4t4nhJ//3/CeYjRJ0TN4
+Hh5H1TKaM9HrZ2qJYvsEp8w4CRf9kHogEwyni8ruB5W7xc8FhvayYI9JMZcW8Hs0
+YQXc3JE8TeKGfTXvNgs7vHJYLhEbc2ztvDas5/tYF/46v+wihmhd64NNlDBWfC++
+ANYqhKnKGFAuT0cR89yVgAaYdkkIWaDS5blEwGaoaNeul46z4EN23w57wr7vkNWd
+BxDaFn75BvupIaw71mfoD7PgIaDdX7AvQOnXzWpyIhHx/5j5NG8bB/L5ZZIL7crx
+Oqc4Q1eN8kQrDt3nI+uCRyzzzFfs6NY2mZp82mZmDqItAgMBAAGjggJaMIICVjBP
+BgNVHSAESDBGMBEGDysGAQQBga0hgiwBAQQDAzARBg8rBgEEAYGtIYIsAgEEAwEw
+DwYNKwYBBAGBrSGCLAEBBDANBgsrBgEEAYGtIYIsHjAJBgNVHRMEAjAAMAsGA1Ud
+DwQEAwIF4DAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwEwHQYDVR0OBBYE
+FIbWw4ptOwcWDwcg8pXb4ksYWNYXMB8GA1UdIwQYMBaAFHmHeGov+pu8I0+UpqN3
+HR4OlIAPMCIGA1UdEQQbMBmCF2lkcC56dXYudW5pLW11ZW5jaGVuLmRlMIGLBgNV
+HR8EgYMwgYAwPqA8oDqGOGh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvdW5pLW11ZW5j
+aGVuLWNhL3B1Yi9jcmwvY2FjcmwuY3JsMD6gPKA6hjhodHRwOi8vY2RwMi5wY2Eu
+ZGZuLmRlL3VuaS1tdWVuY2hlbi1jYS9wdWIvY3JsL2NhY3JsLmNybDCB2QYIKwYB
+BQUHAQEEgcwwgckwMwYIKwYBBQUHMAGGJ2h0dHA6Ly9vY3NwLnBjYS5kZm4uZGUv
+T0NTUC1TZXJ2ZXIvT0NTUDBIBggrBgEFBQcwAoY8aHR0cDovL2NkcDEucGNhLmRm
+bi5kZS91bmktbXVlbmNoZW4tY2EvcHViL2NhY2VydC9jYWNlcnQuY3J0MEgGCCsG
+AQUFBzAChjxodHRwOi8vY2RwMi5wY2EuZGZuLmRlL3VuaS1tdWVuY2hlbi1jYS9w
+dWIvY2FjZXJ0L2NhY2VydC5jcnQwDQYJKoZIhvcNAQELBQADggEBACfTktB160hm
+sLXbmlnxfKrcMJqnzJIx7/s2y0VvWF9047zcRyzOOj8TlBsj3XNsBGDIiHF0Xd+y
+NEbILWTOX99L2cBjdTgq1LVVgBFilHihRhs0Gv0nNla/UgxBn4uTO/Ycu1ObL2Ig
+AOzbYCuxsNsXKw7hJ3crxGshTrDhfMfuF5uOm/sL//x3UQTQBVEG2DI/fiyYr5yM
+DXcvE6cLUUtxJj8Y6MVx+TXk+t8oOpJw1Bs280GWceOK2iz9xn5tppKkLU8NRC6D
+X6OhQ+Z/v0qLlaHIT85NRLfILRGiWZz3buXDR0TKMqtwdGOFVwAUmF+OD66NYCK/
+Lbe1AE72J+M= 
+		    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </KeyDescriptor>
+ 
+        <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://idp.zuv.uni-muenchen.de:8443/login/profile/SAML1/SOAP/ArtifactResolution" index="1"/>
+
+        <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idp.zuv.uni-muenchen.de:8443/login/profile/SAML2/SOAP/ArtifactResolution" index="2"/>
+        
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.zuv.uni-muenchen.de:8443/login/profile/SAML2/Redirect/SLO"/>
+        
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.zuv.uni-muenchen.de:8443/login/profile/SAML2/POST/SLO"/>
+        
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idp.zuv.uni-muenchen.de:8443/login/profile/SAML2/SOAP/SLO"/>
+                                   
+        <NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+
+        <SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://idp.zuv.uni-muenchen.de:8443/login/profile/Shibboleth/SSO"/>
+        
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.zuv.uni-muenchen.de:8443/login/profile/SAML2/POST/SSO"/>
+
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://idp.zuv.uni-muenchen.de:8443/login/profile/SAML2/POST-SimpleSign/SSO"/>
+        
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.zuv.uni-muenchen.de:8443/login/profile/SAML2/Redirect/SSO"/>
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:Kerberos" Location="https://idp.zuv.uni-muenchen.de:8443/login/profile/SAML2/Kerberos/SSO"/>
+
+    </IDPSSODescriptor>
+
+    <AttributeAuthorityDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+
+        <Extensions>
+            <shibmd:Scope regexp="false">uni-muenchen.de</shibmd:Scope>
+        </Extensions>
+	
+	<!--fogt Inhalt von /etc/pki/tls/certs/servercerts/idp.zuv.uni-muenchen.de_cert.pem -->
+	 <KeyDescriptor>
+            <ds:KeyInfo>
+                <ds:X509Data>
+                    <ds:X509Certificate>
+MIIGBDCCBOygAwIBAgIHGTNceE/fFjANBgkqhkiG9w0BAQsFADCBkDELMAkGA1UE
+BhMCREUxDzANBgNVBAgTBkJheWVybjERMA8GA1UEBxMITXVlbmNoZW4xMTAvBgNV
+BAoTKEx1ZHdpZy1NYXhpbWlsaWFucy1Vbml2ZXJzaXRhZXQgTXVlbmNoZW4xDzAN
+BgNVBAMTBkxNVS1DQTEZMBcGCSqGSIb3DQEJARYKcGtpQGxtdS5kZTAeFw0xNTAz
+MjYxMDI2NDlaFw0xNzAzMjUyMzAwMDBaMIGVMQswCQYDVQQGEwJERTEPMA0GA1UE
+CAwGQmF5ZXJuMREwDwYDVQQHDAhNdWVuY2hlbjExMC8GA1UECgwoTHVkd2lnLU1h
+eGltaWxpYW5zLVVuaXZlcnNpdGFldCBNdWVuY2hlbjENMAsGA1UECwwEVkkuNDEg
+MB4GA1UEAwwXaWRwLnp1di51bmktbXVlbmNoZW4uZGUwggEiMA0GCSqGSIb3DQEB
+AQUAA4IBDwAwggEKAoIBAQCypSHxn78atXxkTwUGHS4i4t4nhJ//3/CeYjRJ0TN4
+Hh5H1TKaM9HrZ2qJYvsEp8w4CRf9kHogEwyni8ruB5W7xc8FhvayYI9JMZcW8Hs0
+YQXc3JE8TeKGfTXvNgs7vHJYLhEbc2ztvDas5/tYF/46v+wihmhd64NNlDBWfC++
+ANYqhKnKGFAuT0cR89yVgAaYdkkIWaDS5blEwGaoaNeul46z4EN23w57wr7vkNWd
+BxDaFn75BvupIaw71mfoD7PgIaDdX7AvQOnXzWpyIhHx/5j5NG8bB/L5ZZIL7crx
+Oqc4Q1eN8kQrDt3nI+uCRyzzzFfs6NY2mZp82mZmDqItAgMBAAGjggJaMIICVjBP
+BgNVHSAESDBGMBEGDysGAQQBga0hgiwBAQQDAzARBg8rBgEEAYGtIYIsAgEEAwEw
+DwYNKwYBBAGBrSGCLAEBBDANBgsrBgEEAYGtIYIsHjAJBgNVHRMEAjAAMAsGA1Ud
+DwQEAwIF4DAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwEwHQYDVR0OBBYE
+FIbWw4ptOwcWDwcg8pXb4ksYWNYXMB8GA1UdIwQYMBaAFHmHeGov+pu8I0+UpqN3
+HR4OlIAPMCIGA1UdEQQbMBmCF2lkcC56dXYudW5pLW11ZW5jaGVuLmRlMIGLBgNV
+HR8EgYMwgYAwPqA8oDqGOGh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvdW5pLW11ZW5j
+aGVuLWNhL3B1Yi9jcmwvY2FjcmwuY3JsMD6gPKA6hjhodHRwOi8vY2RwMi5wY2Eu
+ZGZuLmRlL3VuaS1tdWVuY2hlbi1jYS9wdWIvY3JsL2NhY3JsLmNybDCB2QYIKwYB
+BQUHAQEEgcwwgckwMwYIKwYBBQUHMAGGJ2h0dHA6Ly9vY3NwLnBjYS5kZm4uZGUv
+T0NTUC1TZXJ2ZXIvT0NTUDBIBggrBgEFBQcwAoY8aHR0cDovL2NkcDEucGNhLmRm
+bi5kZS91bmktbXVlbmNoZW4tY2EvcHViL2NhY2VydC9jYWNlcnQuY3J0MEgGCCsG
+AQUFBzAChjxodHRwOi8vY2RwMi5wY2EuZGZuLmRlL3VuaS1tdWVuY2hlbi1jYS9w
+dWIvY2FjZXJ0L2NhY2VydC5jcnQwDQYJKoZIhvcNAQELBQADggEBACfTktB160hm
+sLXbmlnxfKrcMJqnzJIx7/s2y0VvWF9047zcRyzOOj8TlBsj3XNsBGDIiHF0Xd+y
+NEbILWTOX99L2cBjdTgq1LVVgBFilHihRhs0Gv0nNla/UgxBn4uTO/Ycu1ObL2Ig
+AOzbYCuxsNsXKw7hJ3crxGshTrDhfMfuF5uOm/sL//x3UQTQBVEG2DI/fiyYr5yM
+DXcvE6cLUUtxJj8Y6MVx+TXk+t8oOpJw1Bs280GWceOK2iz9xn5tppKkLU8NRC6D
+X6OhQ+Z/v0qLlaHIT85NRLfILRGiWZz3buXDR0TKMqtwdGOFVwAUmF+OD66NYCK/
+Lbe1AE72J+M=
+		 </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </KeyDescriptor>
+
+
+        <AttributeService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://idp.zuv.uni-muenchen.de:8443/login/profile/SAML1/SOAP/AttributeQuery"/>
+        
+        <AttributeService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idp.zuv.uni-muenchen.de:8443/login/profile/SAML2/SOAP/AttributeQuery"/>
+        
+        <NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+        
+    </AttributeAuthorityDescriptor>
+   
+
+</EntityDescriptor><md:EntityDescriptor xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="iukintest.verwaltung.uni-muenchen.de">
+  <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol">
+    <md:KeyDescriptor>
+      <ds:KeyInfo>
+        <ds:X509Data>
+          <ds:X509Certificate>
+MIIGFDCCBPygAwIBAgIHGOr6a1Fs6zANBgkqhkiG9w0BAQsFADCBkDELMAkGA1UE
+BhMCREUxDzANBgNVBAgTBkJheWVybjERMA8GA1UEBxMITXVlbmNoZW4xMTAvBgNV
+BAoTKEx1ZHdpZy1NYXhpbWlsaWFucy1Vbml2ZXJzaXRhZXQgTXVlbmNoZW4xDzAN
+BgNVBAMTBkxNVS1DQTEZMBcGCSqGSIb3DQEJARYKcGtpQGxtdS5kZTAeFw0xNTAx
+MzAxMjQ1MTVaFw0xNzAxMzAwMDAwMDBaMIGiMQswCQYDVQQGEwJERTEPMA0GA1UE
+CBMGQmF5ZXJuMREwDwYDVQQHEwhNdWVuY2hlbjExMC8GA1UEChMoTHVkd2lnLU1h
+eGltaWxpYW5zLVVuaXZlcnNpdGFldCBNdWVuY2hlbjENMAsGA1UECxMEVkkuNTEt
+MCsGA1UEAxMkaXVraW50ZXN0LnZlcndhbHR1bmcudW5pLW11ZW5jaGVuLmRlMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyPR/zs17jiimeMdr5W96KLI8
+EFYYCtcHBP99LFcTUrOIcL1D3bXX2bLI7MXbdp3q3PNKsGwKkPkJccwH/4TQJ7H0
+SQQZLygr6y77zfAzPrlLdVfxjZzWngyP31rEGqg2Y8SEj6edvKZavN0m/vTTI3Yd
+ptq42/Dd5K28xlUR7S/S/NyveimYhCQdjyKePnwNIXFhgQA/3bLgSHq5E3SiidJs
+VAQupOxKIghzxLUF039ZOdbOfBlCcnq/KhBEgtunotudS/mCq0mvvf8pb8UXgAcL
+wFDniUA7u1UADL2Ybr0HIpGqWDr20/zwFSWye+NrMxgy5UuR6VtIjbPx4sk19QID
+AQABo4ICXTCCAlkwTwYDVR0gBEgwRjARBg8rBgEEAYGtIYIsAQEEAwMwEQYPKwYB
+BAGBrSGCLAIBBAMBMA8GDSsGAQQBga0hgiwBAQQwDQYLKwYBBAGBrSGCLB4wCQYD
+VR0TBAIwADALBgNVHQ8EBAMCBPAwEwYDVR0lBAwwCgYIKwYBBQUHAwEwHQYDVR0O
+BBYEFNm7IQGeVYbvqwmnlTdA+YoTFg0NMB8GA1UdIwQYMBaAFHmHeGov+pu8I0+U
+pqN3HR4OlIAPMC8GA1UdEQQoMCaCJGl1a2ludGVzdC52ZXJ3YWx0dW5nLnVuaS1t
+dWVuY2hlbi5kZTCBiwYDVR0fBIGDMIGAMD6gPKA6hjhodHRwOi8vY2RwMS5wY2Eu
+ZGZuLmRlL3VuaS1tdWVuY2hlbi1jYS9wdWIvY3JsL2NhY3JsLmNybDA+oDygOoY4
+aHR0cDovL2NkcDIucGNhLmRmbi5kZS91bmktbXVlbmNoZW4tY2EvcHViL2NybC9j
+YWNybC5jcmwwgdkGCCsGAQUFBwEBBIHMMIHJMDMGCCsGAQUFBzABhidodHRwOi8v
+b2NzcC5wY2EuZGZuLmRlL09DU1AtU2VydmVyL09DU1AwSAYIKwYBBQUHMAKGPGh0
+dHA6Ly9jZHAxLnBjYS5kZm4uZGUvdW5pLW11ZW5jaGVuLWNhL3B1Yi9jYWNlcnQv
+Y2FjZXJ0LmNydDBIBggrBgEFBQcwAoY8aHR0cDovL2NkcDIucGNhLmRmbi5kZS91
+bmktbXVlbmNoZW4tY2EvcHViL2NhY2VydC9jYWNlcnQuY3J0MA0GCSqGSIb3DQEB
+CwUAA4IBAQBR2dEBEEaYojhJ5UbkZIlLHSuQvW1DafxkJ8t5DB8FuvFe3r+DDtFS
+tdaWgiwRRcVUpKX1nYbs+qJIWKrph9vvNhtseiHEsYrQZrPEA4ueeoEEjQN4yRXM
+YxrgiqP7/S+jYXUh8pFzEsLzuwIYSddU1yNlu52qT9qaNlqY/8dDJJ+H/2cw1Dov
+j95SoYi9Sy70YET/AG6ymX72bYSSoCAJ2c1hmpcEqp80ugw5IpDePUQf71lP09+R
+/Qezew/7eGVx66TuuwX97RaHWYjj03VxHgezoDFyT6jzEnzVIZk2cv7YWnhVxini
+8pBpO+51/j39mhblkK02eJuy7yy42Mb9
+          </ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://iukintest.verwaltung.uni-muenchen.de/Shibboleth.sso/SAML2/POST" index="1"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://iukintest.verwaltung.uni-muenchen.de/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://iukintest.verwaltung.uni-muenchen.de/Shibboleth.sso/SAML2/ECP" index="3"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://iukintest.verwaltung.uni-muenchen.de/Shibboleth.sso/SAML/POST" index="4"/>
+  </md:SPSSODescriptor>
+</md:EntityDescriptor><md:EntityDescriptor ID="_f1aa76e71e0aa4c2286f4209d0dcc4cf85620855" entityID="urn:portal.lmu.de:zuv_intranet">
+
+  <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha224"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+  </md:Extensions>
+
+  <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:Extensions>
+      <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://www.intranet.verwaltung.uni-muenchen.de/sp/Login"/>
+    </md:Extensions>
+    <md:KeyDescriptor>
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:KeyName>www.intranet.verwaltung.uni-muenchen.de</ds:KeyName>
+        <ds:X509Data>
+          <ds:X509SubjectName>CN=www.intranet.verwaltung.uni-muenchen.de,OU=VI.4,O=Ludwig-Maximilians-Universitaet Muenchen,L=Muenchen,ST=Bayern,C=DE</ds:X509SubjectName>
+          <ds:X509Certificate>MIIGGjCCBQKgAwIBAgIHGK47qjTc+TANBgkqhkiG9w0BAQsFADCBkDELMAkGA1UE
+BhMCREUxDzANBgNVBAgTBkJheWVybjERMA8GA1UEBxMITXVlbmNoZW4xMTAvBgNV
+BAoTKEx1ZHdpZy1NYXhpbWlsaWFucy1Vbml2ZXJzaXRhZXQgTXVlbmNoZW4xDzAN
+BgNVBAMTBkxNVS1DQTEZMBcGCSqGSIb3DQEJARYKcGtpQGxtdS5kZTAeFw0xNDEy
+MTUxMDU1MjJaFw0xNjEyMTUwMTAwMDBaMIGlMQswCQYDVQQGEwJERTEPMA0GA1UE
+CBMGQmF5ZXJuMREwDwYDVQQHEwhNdWVuY2hlbjExMC8GA1UEChMoTHVkd2lnLU1h
+eGltaWxpYW5zLVVuaXZlcnNpdGFldCBNdWVuY2hlbjENMAsGA1UECxMEVkkuNDEw
+MC4GA1UEAxMnd3d3LmludHJhbmV0LnZlcndhbHR1bmcudW5pLW11ZW5jaGVuLmRl
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn7YSmD8OQrBw03KE6YUE
+B//CoUhwIyWqJPGn+TEna8vdi/uhQe8l0/u1pLRmf7IFGEju8BG1gkd8mNZjtkFd
+MLryL+mBiPIKimzi8m0q+ZPRFB0DuDeR2MdZZF4GV4edB2jaHNFBxS7x3nTJFv1A
+A5bB7nipTLBwzitducnvVC8ioOZiUhnHiYpN/GJZJehmiLMCrkJfh7MoKyXkldJD
+W7lT4VLpFyENTrZobUCVfnFsA0+55dLBrg9yVpZ02UJJH3EWnA0vMimel9c/UYIh
+vHQKHodJvUyt29/P1VBkSsQzR10JKMc02VsOXZClDiwmZVIP8GJZbnNpCXMDUxLx
+mQIDAQABo4ICYDCCAlwwTwYDVR0gBEgwRjARBg8rBgEEAYGtIYIsAQEEAwMwEQYP
+KwYBBAGBrSGCLAIBBAMBMA8GDSsGAQQBga0hgiwBAQQwDQYLKwYBBAGBrSGCLB4w
+CQYDVR0TBAIwADALBgNVHQ8EBAMCBPAwEwYDVR0lBAwwCgYIKwYBBQUHAwEwHQYD
+VR0OBBYEFBeV35yN6Y3x0XL4t8TNgTAVFYTYMB8GA1UdIwQYMBaAFHmHeGov+pu8
+I0+UpqN3HR4OlIAPMDIGA1UdEQQrMCmCJ3d3dy5pbnRyYW5ldC52ZXJ3YWx0dW5n
+LnVuaS1tdWVuY2hlbi5kZTCBiwYDVR0fBIGDMIGAMD6gPKA6hjhodHRwOi8vY2Rw
+MS5wY2EuZGZuLmRlL3VuaS1tdWVuY2hlbi1jYS9wdWIvY3JsL2NhY3JsLmNybDA+
+oDygOoY4aHR0cDovL2NkcDIucGNhLmRmbi5kZS91bmktbXVlbmNoZW4tY2EvcHVi
+L2NybC9jYWNybC5jcmwwgdkGCCsGAQUFBwEBBIHMMIHJMDMGCCsGAQUFBzABhido
+dHRwOi8vb2NzcC5wY2EuZGZuLmRlL09DU1AtU2VydmVyL09DU1AwSAYIKwYBBQUH
+MAKGPGh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvdW5pLW11ZW5jaGVuLWNhL3B1Yi9j
+YWNlcnQvY2FjZXJ0LmNydDBIBggrBgEFBQcwAoY8aHR0cDovL2NkcDIucGNhLmRm
+bi5kZS91bmktbXVlbmNoZW4tY2EvcHViL2NhY2VydC9jYWNlcnQuY3J0MA0GCSqG
+SIb3DQEBCwUAA4IBAQAid75jOdgkcvnGttObYr6cwt5KSUsQkbARqfhvneT+dq9/
+4KKCrzVda8gznBRPIt8QGSqu+LR3LmY+BEH2Tp4IRuUtiUQeKsTh4S4KY8APuKs5
+y+03SI2JLxId5wm4P0VyoP8uq9cQl7PPZn11FJds/qYOA8NbUesT2dolqNyzpFFr
+yoAf6OQ0Y3oLX9nomKDiN6N/UCcCbsryOcHhmk3KUJlnnAZ9SkCTqq5vGtfmDVJM
+YXyRfLd1q5xnPSS7AbC8UL8C5Q+gFNvkYe9jEngUEFvkTwPkfCTQu2LAiwbg4REs
+AtJ5JvZVvclbyvfUmF36pn1Ttf0LN0PNcMWzcb7E
+</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes128-gcm"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes192-gcm"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes256-gcm"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+    </md:KeyDescriptor>
+    <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://www.intranet.verwaltung.uni-muenchen.de/sp/Artifact/SOAP" index="1"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://www.intranet.verwaltung.uni-muenchen.de/sp/SLO/Artifact"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://www.intranet.verwaltung.uni-muenchen.de/sp/SLO/POST"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://www.intranet.verwaltung.uni-muenchen.de/sp/SLO/Redirect"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://www.intranet.verwaltung.uni-muenchen.de/sp/SLO/SOAP"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://www.intranet.verwaltung.uni-muenchen.de/sp/SAML2/ECP" index="4"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://www.intranet.verwaltung.uni-muenchen.de/sp/SAML2/POST" index="5"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://www.intranet.verwaltung.uni-muenchen.de/sp/SAML2/POST-SimpleSign" index="6"/>
+  </md:SPSSODescriptor>
+
+</md:EntityDescriptor><md:EntityDescriptor xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="iuksptest.verwaltung.uni-muenchen.de">
+  <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol">
+    <md:KeyDescriptor>
+      <ds:KeyInfo>
+        <ds:X509Data>
+          <ds:X509Certificate>
+MIIGFDCCBPygAwIBAgIHGOr6aS0mQjANBgkqhkiG9w0BAQsFADCBkDELMAkGA1UE
+BhMCREUxDzANBgNVBAgTBkJheWVybjERMA8GA1UEBxMITXVlbmNoZW4xMTAvBgNV
+BAoTKEx1ZHdpZy1NYXhpbWlsaWFucy1Vbml2ZXJzaXRhZXQgTXVlbmNoZW4xDzAN
+BgNVBAMTBkxNVS1DQTEZMBcGCSqGSIb3DQEJARYKcGtpQGxtdS5kZTAeFw0xNTAx
+MzAxMjQ1MTNaFw0xNzAxMzAwMDAwMDBaMIGiMQswCQYDVQQGEwJERTEPMA0GA1UE
+CBMGQmF5ZXJuMREwDwYDVQQHEwhNdWVuY2hlbjExMC8GA1UEChMoTHVkd2lnLU1h
+eGltaWxpYW5zLVVuaXZlcnNpdGFldCBNdWVuY2hlbjENMAsGA1UECxMEVkkuNTEt
+MCsGA1UEAxMkaXVrc3B0ZXN0LnZlcndhbHR1bmcudW5pLW11ZW5jaGVuLmRlMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2AmjkvkUPEtJjdOr48AVsx5J
+OzCXFobiCbw1tbTlSiMxiJ8bMbbMhmquV8tatGTVvYqk9eGWOWH35bfatrQkpXQS
+FdlklPqWIQJPAed1YN4PXnllGFNoxQd5Jxb3JIUr9ZfpuRHiiu+Z66qDDYDvSizZ
+bwbjY1BtoUnu1o8Hxo20rTC+Q1fbDLqajaudl0PNRXngy0l6JHF6ikRXtExBL5bb
+9OTI5pmNGsx7Nr3MG8R5s0zFYw08cAtWwufTP8YY7KOh/gS9Zfi4P9kOV9WAlW4N
+/4CiBAAiheRD89SVC1HaffY4KIYat+vnKFtizuxR0gJ5xHvnyg4buBRZXwLofwID
+AQABo4ICXTCCAlkwTwYDVR0gBEgwRjARBg8rBgEEAYGtIYIsAQEEAwMwEQYPKwYB
+BAGBrSGCLAIBBAMBMA8GDSsGAQQBga0hgiwBAQQwDQYLKwYBBAGBrSGCLB4wCQYD
+VR0TBAIwADALBgNVHQ8EBAMCBPAwEwYDVR0lBAwwCgYIKwYBBQUHAwEwHQYDVR0O
+BBYEFO5rdxIFYqo1NytYd4hZZrusgW/FMB8GA1UdIwQYMBaAFHmHeGov+pu8I0+U
+pqN3HR4OlIAPMC8GA1UdEQQoMCaCJGl1a3NwdGVzdC52ZXJ3YWx0dW5nLnVuaS1t
+dWVuY2hlbi5kZTCBiwYDVR0fBIGDMIGAMD6gPKA6hjhodHRwOi8vY2RwMS5wY2Eu
+ZGZuLmRlL3VuaS1tdWVuY2hlbi1jYS9wdWIvY3JsL2NhY3JsLmNybDA+oDygOoY4
+aHR0cDovL2NkcDIucGNhLmRmbi5kZS91bmktbXVlbmNoZW4tY2EvcHViL2NybC9j
+YWNybC5jcmwwgdkGCCsGAQUFBwEBBIHMMIHJMDMGCCsGAQUFBzABhidodHRwOi8v
+b2NzcC5wY2EuZGZuLmRlL09DU1AtU2VydmVyL09DU1AwSAYIKwYBBQUHMAKGPGh0
+dHA6Ly9jZHAxLnBjYS5kZm4uZGUvdW5pLW11ZW5jaGVuLWNhL3B1Yi9jYWNlcnQv
+Y2FjZXJ0LmNydDBIBggrBgEFBQcwAoY8aHR0cDovL2NkcDIucGNhLmRmbi5kZS91
+bmktbXVlbmNoZW4tY2EvcHViL2NhY2VydC9jYWNlcnQuY3J0MA0GCSqGSIb3DQEB
+CwUAA4IBAQBwdWY+TJqS3XFmpAzU8Cz74ON9b3EcE7MMLxTPEEMD88e8dWgqVACK
+RVxOzOKrTbzdgEIqYU5YcG63AojyXLd4iwNLQz1mXK73lzBYMHt1ZJGiKazFe08K
+gxgFfk3EP260q/Oj+Fkk+hMae21sJwBldvez23+8fEX0ddSrMti1OBo0AsLNIuL1
+JL0dZBUQkQ4I0cUBjt9Mpu0dOm9qRg27+sDvVG1BDar2QzrdQ41404sSSZiAIfTf
+30yf/Q+l0qtCEG2SCUsTKDuEI/ir08cCOyUUMZBUEpT9gdGb9l+n9Ak/7dJhi8yG
+XUAnYNHOMKbThtY1fjG+8JD8P8+FTOJd
+          </ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://iuksptest.verwaltung.uni-muenchen.de/Shibboleth.sso/SAML2/POST" index="1"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://iuksptest.verwaltung.uni-muenchen.de/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://iuksptest.verwaltung.uni-muenchen.de/Shibboleth.sso/SAML2/ECP" index="3"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://iuksptest.verwaltung.uni-muenchen.de/Shibboleth.sso/SAML/POST" index="4"/>
+  </md:SPSSODescriptor>
+</md:EntityDescriptor><md:EntityDescriptor ID="_12a5066d050b8defacc8fb2b6200e28005478241" entityID="urn:portal.lmu.de:zuv_serviceportal">
+
+  <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha224"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+  </md:Extensions>
+
+  <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:Extensions>
+      <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://www.serviceportal.verwaltung.uni-muenchen.de/sp/Login"/>
+    </md:Extensions>
+    <md:KeyDescriptor>
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:KeyName>www.serviceportal.verwaltung.uni-muenchen.de</ds:KeyName>
+        <ds:X509Data>
+          <ds:X509SubjectName>CN=www.serviceportal.verwaltung.uni-muenchen.de,OU=VI.4,O=Ludwig-Maximilians-Universitaet Muenchen,L=Muenchen,ST=Bayern,C=DE</ds:X509SubjectName>
+          <ds:X509Certificate>MIIGJDCCBQygAwIBAgIHGK47q5QVPjANBgkqhkiG9w0BAQsFADCBkDELMAkGA1UE
+BhMCREUxDzANBgNVBAgTBkJheWVybjERMA8GA1UEBxMITXVlbmNoZW4xMTAvBgNV
+BAoTKEx1ZHdpZy1NYXhpbWlsaWFucy1Vbml2ZXJzaXRhZXQgTXVlbmNoZW4xDzAN
+BgNVBAMTBkxNVS1DQTEZMBcGCSqGSIb3DQEJARYKcGtpQGxtdS5kZTAeFw0xNDEy
+MTUxMDU1MjRaFw0xNjEyMTUwMTAwMDBaMIGqMQswCQYDVQQGEwJERTEPMA0GA1UE
+CBMGQmF5ZXJuMREwDwYDVQQHEwhNdWVuY2hlbjExMC8GA1UEChMoTHVkd2lnLU1h
+eGltaWxpYW5zLVVuaXZlcnNpdGFldCBNdWVuY2hlbjENMAsGA1UECxMEVkkuNDE1
+MDMGA1UEAxMsd3d3LnNlcnZpY2Vwb3J0YWwudmVyd2FsdHVuZy51bmktbXVlbmNo
+ZW4uZGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC8nxMwYbYMk/JG
+2N3nvmcypE4defX68k06M+fJk5AL6S5lLu14oBADdPo8uhH+gMqu1OGq0jJbsAVo
+67i1mGI1Mk92AXdej7WsmpEeUnSPD/ntauAV6QphjwDnAuZNt48Q/j4Yl2lnpy+B
+6GU1AeLGfssUFcDF6BkSQrlWLLT+gn8apQZRYdI+lgaGW7dBTfRCcwDiRmN3T4KP
+PqO61FTIVjQRflIeLA86NeV0L4NZi62cLtage2ATYymTfqiJ8w5UW16s7l1lJzWx
+vXiwX7QFslR682QRH7TL2776j9ORnu5KkwE1B9mGf+L9L+AItd7BOEh66663lGYo
+YLpZTmD5AgMBAAGjggJlMIICYTBPBgNVHSAESDBGMBEGDysGAQQBga0hgiwBAQQD
+AzARBg8rBgEEAYGtIYIsAgEEAwEwDwYNKwYBBAGBrSGCLAEBBDANBgsrBgEEAYGt
+IYIsHjAJBgNVHRMEAjAAMAsGA1UdDwQEAwIE8DATBgNVHSUEDDAKBggrBgEFBQcD
+ATAdBgNVHQ4EFgQUU6TeSq959L4FR2v8JHDtweIXFnQwHwYDVR0jBBgwFoAUeYd4
+ai/6m7wjT5Smo3cdHg6UgA8wNwYDVR0RBDAwLoIsd3d3LnNlcnZpY2Vwb3J0YWwu
+dmVyd2FsdHVuZy51bmktbXVlbmNoZW4uZGUwgYsGA1UdHwSBgzCBgDA+oDygOoY4
+aHR0cDovL2NkcDEucGNhLmRmbi5kZS91bmktbXVlbmNoZW4tY2EvcHViL2NybC9j
+YWNybC5jcmwwPqA8oDqGOGh0dHA6Ly9jZHAyLnBjYS5kZm4uZGUvdW5pLW11ZW5j
+aGVuLWNhL3B1Yi9jcmwvY2FjcmwuY3JsMIHZBggrBgEFBQcBAQSBzDCByTAzBggr
+BgEFBQcwAYYnaHR0cDovL29jc3AucGNhLmRmbi5kZS9PQ1NQLVNlcnZlci9PQ1NQ
+MEgGCCsGAQUFBzAChjxodHRwOi8vY2RwMS5wY2EuZGZuLmRlL3VuaS1tdWVuY2hl
+bi1jYS9wdWIvY2FjZXJ0L2NhY2VydC5jcnQwSAYIKwYBBQUHMAKGPGh0dHA6Ly9j
+ZHAyLnBjYS5kZm4uZGUvdW5pLW11ZW5jaGVuLWNhL3B1Yi9jYWNlcnQvY2FjZXJ0
+LmNydDANBgkqhkiG9w0BAQsFAAOCAQEACcuoEHtIZqqxxRT66TW9uJGYQrdcXHT3
+Vb7j+b7+zSZwPdkOf0LigNnIoZG6Io68Jmi9FkKALkBX3B5eEQSjKg9m1ngPPa4C
+3kTf7ga5uvBkMhNGp0FYaKQAsQbi7gPoljLfU4hQ0AeroSEQZuT103G1jNV7H/Ug
+qP5euiDiJqYJkmrjpYL02VOqPFDh4QsjUfJvNBmV8ACtIhzpvKQODw//rBGmSMOs
+P5hmxJ7qDw7hULevkSF4J99RBUFqpFfY/diaHs102EccyIWpHKHEcknpakW6tBF4
+8Bqhy/yp2vZTbAvQnS9MuYxSU/ldAv80Q+D8qzreNryVFuMIs2Kztg==
+</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes128-gcm"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes192-gcm"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes256-gcm"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+    </md:KeyDescriptor>
+    <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://www.serviceportal.verwaltung.uni-muenchen.de/sp/Artifact/SOAP" index="1"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://www.serviceportal.verwaltung.uni-muenchen.de/sp/SLO/Artifact"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://www.serviceportal.verwaltung.uni-muenchen.de/sp/SLO/POST"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://www.serviceportal.verwaltung.uni-muenchen.de/sp/SLO/Redirect"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://www.serviceportal.verwaltung.uni-muenchen.de/sp/SLO/SOAP"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://www.serviceportal.verwaltung.uni-muenchen.de/sp/SAML2/Artifact" index="3"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://www.serviceportal.verwaltung.uni-muenchen.de/sp/SAML2/ECP" index="4"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://www.serviceportal.verwaltung.uni-muenchen.de/sp/SAML2/POST" index="5"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://www.serviceportal.verwaltung.uni-muenchen.de/sp/SAML2/POST-SimpleSign" index="6"/>
+  </md:SPSSODescriptor>
+
+</md:EntityDescriptor><md:EntityDescriptor ID="_a78a5ca58e27063323721faaa5878d5b59137657" entityID="urn:portal.lmu.de:portal">
+
+  <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+  </md:Extensions>
+
+  <md:SPSSODescriptor AuthnRequestsSigned="1" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:Extensions>
+      <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://www.portal.uni-muenchen.de/sp/Login"/>
+    </md:Extensions>
+    <md:KeyDescriptor>
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:KeyName>www.portal.uni-muenchen.de</ds:KeyName>
+        <ds:X509Data>
+          <ds:X509SubjectName>CN=www.portal.uni-muenchen.de,OU=Ref. IIIA6 (Internet),O=Ludwig-Maximilians-Universitaet Muenchen,L=Muenchen,ST=Bayern,C=DE</ds:X509SubjectName>
+          <ds:X509Certificate>MIIFYTCCBEmgAwIBAgIECw9n3TANBgkqhkiG9w0BAQUFADCBkDELMAkGA1UEBhMC
+REUxDzANBgNVBAgTBkJheWVybjERMA8GA1UEBxMITXVlbmNoZW4xMTAvBgNVBAoT
+KEx1ZHdpZy1NYXhpbWlsaWFucy1Vbml2ZXJzaXRhZXQgTXVlbmNoZW4xDzANBgNV
+BAMTBkxNVS1DQTEZMBcGCSqGSIb3DQEJARYKcGtpQGxtdS5kZTAeFw0wNzA5MTgx
+NTEwMDdaFw0xMjA5MTYxNTEwMDdaMIGpMQswCQYDVQQGEwJERTEPMA0GA1UECBMG
+QmF5ZXJuMREwDwYDVQQHEwhNdWVuY2hlbjExMC8GA1UEChMoTHVkd2lnLU1heGlt
+aWxpYW5zLVVuaXZlcnNpdGFldCBNdWVuY2hlbjEeMBwGA1UECxMVUmVmLiBJSUlB
+NiAoSW50ZXJuZXQpMSMwIQYDVQQDExp3d3cucG9ydGFsLnVuaS1tdWVuY2hlbi5k
+ZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANRSYbDRAvh4zRPo/2hi
+XWQwnWWYgiVSWm14q6tfAGQJ7SlR3H8o3VKD8UzRbtKQsjYyktsIa95wiaa87O0O
+3occhpmDqqWswhBYA7OxEclFXfFwiTQovJzOa5db6C5mRgV0JkozRQ786W2u6qWs
+0M3yrEJSgV2uIXW2xC3OMg7YNHShirEBHDX/WUWfsup2w9ZDcNlZhKJoYQ5bd/nV
+dc1BvFE4F3HLzaATnXjLya847YeA94BBudpkHqjfYj8ZTnOX676Tvwy11vV9uEaE
+N7vgYEUhXxOnhGcfhAMab43nWtWmAxq9KFFxq/Gt3qIvyKCQnZKleI2lQFcu0/Uj
+LtkCAwEAAaOCAaYwggGiMAkGA1UdEwQCMAAwCwYDVR0PBAQDAgTwMBMGA1UdJQQM
+MAoGCCsGAQUFBwMBMB0GA1UdDgQWBBQGqhmQkEWBCiF9OA/5rNtYo9qJyzAfBgNV
+HSMEGDAWgBR5h3hqL/qbvCNPlKajdx0eDpSADzCBiwYDVR0fBIGDMIGAMD6gPKA6
+hjhodHRwOi8vY2RwMS5wY2EuZGZuLmRlL3VuaS1tdWVuY2hlbi1jYS9wdWIvY3Js
+L2NhY3JsLmNybDA+oDygOoY4aHR0cDovL2NkcDIucGNhLmRmbi5kZS91bmktbXVl
+bmNoZW4tY2EvcHViL2NybC9jYWNybC5jcmwwgaQGCCsGAQUFBwEBBIGXMIGUMEgG
+CCsGAQUFBzAChjxodHRwOi8vY2RwMS5wY2EuZGZuLmRlL3VuaS1tdWVuY2hlbi1j
+YS9wdWIvY2FjZXJ0L2NhY2VydC5jcnQwSAYIKwYBBQUHMAKGPGh0dHA6Ly9jZHAy
+LnBjYS5kZm4uZGUvdW5pLW11ZW5jaGVuLWNhL3B1Yi9jYWNlcnQvY2FjZXJ0LmNy
+dDANBgkqhkiG9w0BAQUFAAOCAQEAURpbQZvdlfbZq5fRSgAFsQxT9ngLPzbT4iZ7
+tAOo8xtB49G58919Fizgu5Pz/BtzdEHAsY+dftHhE7LgPz8cby00mICkNY7wMHw+
+oloDnhVUOa0Pa1gktDOZqL3sln/QWWck8MS4aKB3YCArvt3l0MGXDWHvhhhldLjI
+J6Z8ajYaIXu1/3Awqsm+rAgQMMaAQu/YLm/F4iehBK9vUZZgYzlZnNhYefOKpm6n
+VQrt6EgXLMmVoRU5qkRUmQJe0HVbfzoFTCeHBSflm2BYvtudkoS+7KDF3G6kn3mg
+1+ubQPJbJRkXZgri7+qbaEEyBjRXxDEm0MYdl34mrZEgF+X84Q==
+</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+    </md:KeyDescriptor>
+    <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://www.portal.uni-muenchen.de/sp/Artifact/SOAP" index="1"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://www.portal.uni-muenchen.de/sp/SLO/Artifact"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://www.portal.uni-muenchen.de/sp/SLO/POST"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://www.portal.uni-muenchen.de/sp/SLO/Redirect"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://www.portal.uni-muenchen.de/sp/SLO/SOAP"/>
+    <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://www.portal.uni-muenchen.de/sp/NIM/Artifact"/>
+    <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://www.portal.uni-muenchen.de/sp/NIM/POST"/>
+    <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://www.portal.uni-muenchen.de/sp/NIM/Redirect"/>
+    <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://www.portal.uni-muenchen.de/sp/NIM/SOAP"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://www.portal.uni-muenchen.de/sp/SAML2/Artifact" index="3"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://www.portal.uni-muenchen.de/sp/SAML2/ECP" index="4"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://www.portal.uni-muenchen.de/sp/SAML2/POST" index="5"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://www.portal.uni-muenchen.de/sp/SAML2/POST-SimpleSign" index="6"/>
+  </md:SPSSODescriptor>
+
+</md:EntityDescriptor><md:EntityDescriptor ID="_0b5150486a26261491c68e6e74e56a4fd927f870" entityID="urn:uni-muenchen.de:portal:sp:vzd-webapps">
+
+  <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+  </md:Extensions>
+
+  <md:SPSSODescriptor AuthnRequestsSigned="1" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:Extensions>
+      <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://vzd-webapps.verwaltung.uni-muenchen.de/sp/Login"/>
+    </md:Extensions>
+    <md:KeyDescriptor>
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:KeyName>vzd-webapps.verwaltung.uni-muenchen.de</ds:KeyName>
+        <ds:X509Data>
+          <ds:X509SubjectName>CN=vzd-webapps.verwaltung.uni-muenchen.de,OU=IIIA5,O=Ludwig-Maximilians-Universitaet Muenchen,L=Muenchen,ST=Bayern,C=DE</ds:X509SubjectName>
+          <ds:X509Certificate>MIIFXTCCBEWgAwIBAgIECw8TBTANBgkqhkiG9w0BAQUFADCBkDELMAkGA1UEBhMC
+REUxDzANBgNVBAgTBkJheWVybjERMA8GA1UEBxMITXVlbmNoZW4xMTAvBgNVBAoT
+KEx1ZHdpZy1NYXhpbWlsaWFucy1Vbml2ZXJzaXRhZXQgTXVlbmNoZW4xDzANBgNV
+BAMTBkxNVS1DQTEZMBcGCSqGSIb3DQEJARYKcGtpQGxtdS5kZTAeFw0wNzA5MTgw
+OTA4MDdaFw0xMjA5MTYwOTA4MDdaMIGlMQswCQYDVQQGEwJERTEPMA0GA1UECBMG
+QmF5ZXJuMREwDwYDVQQHEwhNdWVuY2hlbjExMC8GA1UEChMoTHVkd2lnLU1heGlt
+aWxpYW5zLVVuaXZlcnNpdGFldCBNdWVuY2hlbjEOMAwGA1UECxMFSUlJQTUxLzAt
+BgNVBAMTJnZ6ZC13ZWJhcHBzLnZlcndhbHR1bmcudW5pLW11ZW5jaGVuLmRlMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlfdsA4jiWpdMVGrtEsYFOhMK
+6eR2mNudmpIB0zwpnNcCM3aAPJmDqAQk7QGo67i/4Lm1x6XsUht07n2+1TWb0aWf
+rXPcznoW2EgrYrFoZbKfFzoU5HeyL4bX0JmVd5Ge0BcJ/9g7yQj4E8RK97ru5L18
+GhmW0EYH9J2WeKMtej4gt/wi8l4R9pA4uhqThmscPQhYhf3Uz8/D5DJTeREk/wvE
+our8cF7QgZ46GBMXcphOXUKdiRB7ufn1RbWpjMbNwdTCFWvqeILZd1VojsYBNGbQ
+nc1neQQEj1IfpcK4EaMrcIbz9bKyIHegX+bn9SoP/0LotZZHVdBUwHR230WLUQID
+AQABo4IBpjCCAaIwCQYDVR0TBAIwADALBgNVHQ8EBAMCBPAwEwYDVR0lBAwwCgYI
+KwYBBQUHAwEwHQYDVR0OBBYEFEE/vTS/Zy3lSYJlyfckB5I4XHsaMB8GA1UdIwQY
+MBaAFHmHeGov+pu8I0+UpqN3HR4OlIAPMIGLBgNVHR8EgYMwgYAwPqA8oDqGOGh0
+dHA6Ly9jZHAxLnBjYS5kZm4uZGUvdW5pLW11ZW5jaGVuLWNhL3B1Yi9jcmwvY2Fj
+cmwuY3JsMD6gPKA6hjhodHRwOi8vY2RwMi5wY2EuZGZuLmRlL3VuaS1tdWVuY2hl
+bi1jYS9wdWIvY3JsL2NhY3JsLmNybDCBpAYIKwYBBQUHAQEEgZcwgZQwSAYIKwYB
+BQUHMAKGPGh0dHA6Ly9jZHAxLnBjYS5kZm4uZGUvdW5pLW11ZW5jaGVuLWNhL3B1
+Yi9jYWNlcnQvY2FjZXJ0LmNydDBIBggrBgEFBQcwAoY8aHR0cDovL2NkcDIucGNh
+LmRmbi5kZS91bmktbXVlbmNoZW4tY2EvcHViL2NhY2VydC9jYWNlcnQuY3J0MA0G
+CSqGSIb3DQEBBQUAA4IBAQAR+LZ1aVFEVG+PM4n8rJKkbGTtkY/LJVBWi1eDFrn/
+Q7gKZEKwnSXuDWfgJ7oTgIFmO97UDtDziprlw/vdboa935JWt6xqJE6InMnlkywy
+LZyRk45/NNhpcZ1j0u+RYndonXiH9hvUUadgQHYp0edf4ZDcFWTzzqA9CIC444zj
+UEMWltYku8ZtYhtSCrLo6QYd97oOvC8aoc0gVdVlluLPQpMgdl1PbJyo0kMJ+Q+v
+oj0WkkpBNICwb0ugWz2Z9uNjmVdpUywqWSX3r8i7Ed8B5B8pPDfTP1cwx6c8t5NM
+S8OoqN2OYb1YLfeSgO92/sc4i4uWR93YYKUAvxXePhUw
+</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+    </md:KeyDescriptor>
+    <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://vzd-webapps.verwaltung.uni-muenchen.de/sp/Artifact/SOAP" index="1"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://vzd-webapps.verwaltung.uni-muenchen.de/sp/SLO/SOAP"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://vzd-webapps.verwaltung.uni-muenchen.de/sp/SLO/Redirect"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://vzd-webapps.verwaltung.uni-muenchen.de/sp/SLO/POST"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://vzd-webapps.verwaltung.uni-muenchen.de/sp/SLO/Artifact"/>
+    <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://vzd-webapps.verwaltung.uni-muenchen.de/sp/NIM/SOAP"/>
+    <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://vzd-webapps.verwaltung.uni-muenchen.de/sp/NIM/Redirect"/>
+    <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://vzd-webapps.verwaltung.uni-muenchen.de/sp/NIM/POST"/>
+    <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://vzd-webapps.verwaltung.uni-muenchen.de/sp/NIM/Artifact"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://vzd-webapps.verwaltung.uni-muenchen.de/sp/SAML2/POST" index="1"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://vzd-webapps.verwaltung.uni-muenchen.de/sp/SAML2/POST-SimpleSign" index="2"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://vzd-webapps.verwaltung.uni-muenchen.de/sp/SAML2/Artifact" index="3"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://vzd-webapps.verwaltung.uni-muenchen.de/sp/SAML2/ECP" index="4"/>
+  </md:SPSSODescriptor>
+
+</md:EntityDescriptor><md:EntityDescriptor ID="_59e569f8476ec478ccb853ed4b6be1be000ad54c" entityID="urn:uni-muenchen.de:portal:sp:webfe1">
+  <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha224"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+  </md:Extensions>
+  <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:Extensions>
+      <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://webfe1.verwaltung.uni-muenchen.de/sp/Login"/>
+    </md:Extensions>
+    <md:KeyDescriptor>
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:KeyName>webfe1.verwaltung.uni-muenchen.de</ds:KeyName>
+        <ds:X509Data>
+          <ds:X509SubjectName>CN=webfe1.verwaltung.uni-muenchen.de,OU=VI.4,O=Ludwig-Maximilians-Universitaet Muenchen,L=Muenchen,ST=Bayern,C=DE</ds:X509SubjectName>
+          <ds:X509Certificate>MIIGDjCCBPagAwIBAgIHGLiyzgT+zTANBgkqhkiG9w0BAQsFADCBkDELMAkGA1UE
+BhMCREUxDzANBgNVBAgTBkJheWVybjERMA8GA1UEBxMITXVlbmNoZW4xMTAvBgNV
+BAoTKEx1ZHdpZy1NYXhpbWlsaWFucy1Vbml2ZXJzaXRhZXQgTXVlbmNoZW4xDzAN
+BgNVBAMTBkxNVS1DQTEZMBcGCSqGSIb3DQEJARYKcGtpQGxtdS5kZTAeFw0xNDEy
+MjMwOTI2MjNaFw0xNjEyMjMwMTAwMDBaMIGfMQswCQYDVQQGEwJERTEPMA0GA1UE
+CBMGQmF5ZXJuMREwDwYDVQQHEwhNdWVuY2hlbjExMC8GA1UEChMoTHVkd2lnLU1h
+eGltaWxpYW5zLVVuaXZlcnNpdGFldCBNdWVuY2hlbjENMAsGA1UECxMEVkkuNDEq
+MCgGA1UEAxMhd2ViZmUxLnZlcndhbHR1bmcudW5pLW11ZW5jaGVuLmRlMIIBIjAN
+BgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA41VmA2fyr8B/f+Kjn0LKyVrAYG1q
+A7yYRhz3z9UUbNYEP2GKIQn3klIzFsnin6bd4x9lH+diMkwQ0sQRR2/Zp3ZeYcHH
+5Cdr2uOP/JFTqn3NlBHgG5E/AbUTY1WEPfnKQkSNPVp4raG4h9VQ4166zGiNzuDw
+tZC/cO7vSNJnjaDb4uHJbGkuiULQPKI+nN95hRW6IitB2dLXBHUc1KclArSRYapF
+3qWd7XDL4ACMZiwtR+/+pgQ/MjKa+YfnHC38BvXIwsk/EEx/EP3v+kBBwgV/uFDi
+2Kc7ctyJE7M9UIedXmiP/7zWgoF3uwbIeXGkwCsqGxuqLksAajfM+qZITwIDAQAB
+o4ICWjCCAlYwTwYDVR0gBEgwRjARBg8rBgEEAYGtIYIsAQEEAwMwEQYPKwYBBAGB
+rSGCLAIBBAMBMA8GDSsGAQQBga0hgiwBAQQwDQYLKwYBBAGBrSGCLB4wCQYDVR0T
+BAIwADALBgNVHQ8EBAMCBPAwEwYDVR0lBAwwCgYIKwYBBQUHAwEwHQYDVR0OBBYE
+FGu3hrxrxpTNhxYDXXEVKEEc1U9dMB8GA1UdIwQYMBaAFHmHeGov+pu8I0+UpqN3
+HR4OlIAPMCwGA1UdEQQlMCOCIXdlYmZlMS52ZXJ3YWx0dW5nLnVuaS1tdWVuY2hl
+bi5kZTCBiwYDVR0fBIGDMIGAMD6gPKA6hjhodHRwOi8vY2RwMS5wY2EuZGZuLmRl
+L3VuaS1tdWVuY2hlbi1jYS9wdWIvY3JsL2NhY3JsLmNybDA+oDygOoY4aHR0cDov
+L2NkcDIucGNhLmRmbi5kZS91bmktbXVlbmNoZW4tY2EvcHViL2NybC9jYWNybC5j
+cmwwgdkGCCsGAQUFBwEBBIHMMIHJMDMGCCsGAQUFBzABhidodHRwOi8vb2NzcC5w
+Y2EuZGZuLmRlL09DU1AtU2VydmVyL09DU1AwSAYIKwYBBQUHMAKGPGh0dHA6Ly9j
+ZHAxLnBjYS5kZm4uZGUvdW5pLW11ZW5jaGVuLWNhL3B1Yi9jYWNlcnQvY2FjZXJ0
+LmNydDBIBggrBgEFBQcwAoY8aHR0cDovL2NkcDIucGNhLmRmbi5kZS91bmktbXVl
+bmNoZW4tY2EvcHViL2NhY2VydC9jYWNlcnQuY3J0MA0GCSqGSIb3DQEBCwUAA4IB
+AQCzdOg+JTcBk9TFhExmqDB4uETiw5ECqRBUbQ6V3hzM/tmqMwaYHLurbUqE7N2R
+SXQBYq0iFvt+3PFTvcDNxgWjx1POci2bp5wmF/g3AIVlfRwAouwhUapkSAYWM1Sc
+GRVjFAvJ4zk1ds0fS61Q2wXXQpDFdNR/U1e3ft4qV27A+ovfrktbXw3ior6edw6W
+LSXQx3Lt59qnK1xqrP49g2BYP91My2Bi6IGUKohNAOaVw2FeSvHaLvavbQomnC1d
+yrghqSe/gUO3onau8PN5CdB78IbEhGI5tTJZ3aZSbufzZyoPC6GYTEgqDeSWYHyq
+VtL0IE/sWPmS0I/N+DJgfPxG
+</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes128-gcm"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes192-gcm"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes256-gcm"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+    </md:KeyDescriptor>
+    <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://webfe1.verwaltung.uni-muenchen.de/sp/Artifact/SOAP" index="1"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://webfe1.verwaltung.uni-muenchen.de/sp/SLO/SOAP"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://webfe1.verwaltung.uni-muenchen.de/sp/SLO/Redirect"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://webfe1.verwaltung.uni-muenchen.de/sp/SLO/POST"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://webfe1.verwaltung.uni-muenchen.de/sp/SLO/Artifact"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://webfe1.verwaltung.uni-muenchen.de/sp/SAML2/POST" index="1"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://webfe1.verwaltung.uni-muenchen.de/sp/SAML2/POST-SimpleSign" index="2"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://webfe1.verwaltung.uni-muenchen.de/sp/SAML2/Artifact" index="3"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://webfe1.verwaltung.uni-muenchen.de/sp/SAML2/ECP" index="4"/>
+  </md:SPSSODescriptor>
+</md:EntityDescriptor><md:EntityDescriptor ID="_716f970ea4df8fa34af5f02d9918e75a286e5c8c" entityID="urn:uni-muenchen.de:portal:sp:webfe2">
+  <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha224"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+  </md:Extensions>
+  <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:Extensions>
+      <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://webfe2.verwaltung.uni-muenchen.de/sp/Login"/>
+    </md:Extensions>
+    <md:KeyDescriptor>
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:KeyName>webfe2.verwaltung.uni-muenchen.de</ds:KeyName>
+        <ds:X509Data>
+          <ds:X509SubjectName>CN=webfe2.verwaltung.uni-muenchen.de,OU=VI.4,O=Ludwig-Maximilians-Universitaet Muenchen,L=Muenchen,ST=Bayern,C=DE</ds:X509SubjectName>
+          <ds:X509Certificate>MIIGDjCCBPagAwIBAgIHGLiy0NWTSzANBgkqhkiG9w0BAQsFADCBkDELMAkGA1UE
+BhMCREUxDzANBgNVBAgTBkJheWVybjERMA8GA1UEBxMITXVlbmNoZW4xMTAvBgNV
+BAoTKEx1ZHdpZy1NYXhpbWlsaWFucy1Vbml2ZXJzaXRhZXQgTXVlbmNoZW4xDzAN
+BgNVBAMTBkxNVS1DQTEZMBcGCSqGSIb3DQEJARYKcGtpQGxtdS5kZTAeFw0xNDEy
+MjMwOTI2MjRaFw0xNjEyMjMwMTAwMDBaMIGfMQswCQYDVQQGEwJERTEPMA0GA1UE
+CBMGQmF5ZXJuMREwDwYDVQQHEwhNdWVuY2hlbjExMC8GA1UEChMoTHVkd2lnLU1h
+eGltaWxpYW5zLVVuaXZlcnNpdGFldCBNdWVuY2hlbjENMAsGA1UECxMEVkkuNDEq
+MCgGA1UEAxMhd2ViZmUyLnZlcndhbHR1bmcudW5pLW11ZW5jaGVuLmRlMIIBIjAN
+BgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoTohr9j5rE34bYTo7Nus+0z8E7it
+QtQDvMy+Hk6W+kEhYAmUIDrWHyQWG2RBreMFD+ZY7It3Wd5RnSwZ3xSCVjVS/sMX
+g4fe4Gdxvg2m1xibQVuKlK2qcvc/1Ie6Vbw6qNTeMMRU6T4filrdKaZR/o5jvzWQ
+zykStHhhjrp80Va8I/ozRHVK15A3SMadmzQAihuuxeJ4y6XexMT0pgnfamQNfntP
+RPW34494pd+6NQV0RD2vo68Hd6cTzxMdG6Rne7wqL6qfJudlIUQDEniw+Zk0cFkH
+XTLHiuulEps0bhydPD8ZBfw+8b533m3EcByvg6L8W1FTtp7G3MDo720GdwIDAQAB
+o4ICWjCCAlYwTwYDVR0gBEgwRjARBg8rBgEEAYGtIYIsAQEEAwMwEQYPKwYBBAGB
+rSGCLAIBBAMBMA8GDSsGAQQBga0hgiwBAQQwDQYLKwYBBAGBrSGCLB4wCQYDVR0T
+BAIwADALBgNVHQ8EBAMCBPAwEwYDVR0lBAwwCgYIKwYBBQUHAwEwHQYDVR0OBBYE
+FB2zIizv12Rde7sff1LYOMINymw3MB8GA1UdIwQYMBaAFHmHeGov+pu8I0+UpqN3
+HR4OlIAPMCwGA1UdEQQlMCOCIXdlYmZlMi52ZXJ3YWx0dW5nLnVuaS1tdWVuY2hl
+bi5kZTCBiwYDVR0fBIGDMIGAMD6gPKA6hjhodHRwOi8vY2RwMS5wY2EuZGZuLmRl
+L3VuaS1tdWVuY2hlbi1jYS9wdWIvY3JsL2NhY3JsLmNybDA+oDygOoY4aHR0cDov
+L2NkcDIucGNhLmRmbi5kZS91bmktbXVlbmNoZW4tY2EvcHViL2NybC9jYWNybC5j
+cmwwgdkGCCsGAQUFBwEBBIHMMIHJMDMGCCsGAQUFBzABhidodHRwOi8vb2NzcC5w
+Y2EuZGZuLmRlL09DU1AtU2VydmVyL09DU1AwSAYIKwYBBQUHMAKGPGh0dHA6Ly9j
+ZHAxLnBjYS5kZm4uZGUvdW5pLW11ZW5jaGVuLWNhL3B1Yi9jYWNlcnQvY2FjZXJ0
+LmNydDBIBggrBgEFBQcwAoY8aHR0cDovL2NkcDIucGNhLmRmbi5kZS91bmktbXVl
+bmNoZW4tY2EvcHViL2NhY2VydC9jYWNlcnQuY3J0MA0GCSqGSIb3DQEBCwUAA4IB
+AQBYsnm8HlevJfHmbMAl48cjfcW0XpTaFIPINqgzCSZ9+I3JsH5Nxt7yiHzl4HQY
+nNb9Rb0i90pmTfqW7QjHy5hk7ycsKXHilhpkIT46LQNEWHm5h7dUZNfuUdo3rtuw
+rnlyg6EGyBoZuDzSJu4YijuuyEocVOy3anbIyjFZkzqXrzwtad9I0sZhyAaekY6h
+m1DGT8D8yYSjLbVWSofomCYoR14TUM5R3myQb1+2kObI1Weh3w8xIVXEYWTLBLJo
+hGxjrXhZvoa3a7ZA6QzYFCb4aaouti5BiEjpKGlTGrSpe2n1DDv3p5k6P8ePkKO9
+TWjTizepdAKk/V9PgmiKnGDq
+</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes128-gcm"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes192-gcm"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes256-gcm"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+    </md:KeyDescriptor>
+    <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://webfe2.verwaltung.uni-muenchen.de/sp/Artifact/SOAP" index="1"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://webfe2.verwaltung.uni-muenchen.de/sp/SLO/SOAP"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://webfe2.verwaltung.uni-muenchen.de/sp/SLO/Redirect"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://webfe2.verwaltung.uni-muenchen.de/sp/SLO/POST"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://webfe2.verwaltung.uni-muenchen.de/sp/SLO/Artifact"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://webfe2.verwaltung.uni-muenchen.de/sp/SAML2/POST" index="1"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://webfe2.verwaltung.uni-muenchen.de/sp/SAML2/POST-SimpleSign" index="2"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://webfe2.verwaltung.uni-muenchen.de/sp/SAML2/Artifact" index="3"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://webfe2.verwaltung.uni-muenchen.de/sp/SAML2/ECP" index="4"/>
+  </md:SPSSODescriptor>
+</md:EntityDescriptor><md:EntityDescriptor ID="_71d8ce26f06f2273858aa9f1a6a60ff7ed8b11b9" entityID="urn:portal.lmu.de:www201">
+
+  <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+  </md:Extensions>
+
+  <md:SPSSODescriptor AuthnRequestsSigned="1" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:Extensions>
+      <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://www201.verwaltung.uni-muenchen.de/sp/Login"/>
+    </md:Extensions>
+    <md:KeyDescriptor>
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:KeyName>www201.verwaltung.uni-muenchen.de</ds:KeyName>
+        <ds:X509Data>
+          <ds:X509SubjectName>CN=www201.verwaltung.uni-muenchen.de,OU=IIIA5,O=Uni Muenchen,L=Muenchen,ST=Bayern,C=DE</ds:X509SubjectName>
+          <ds:X509Certificate>MIIFDDCCA/SgAwIBAgIiAhwR/6OH4sy2Yn5ECJk5KrpOTaLP8M0xk2a75wdzAgIE
+BzANBgkqhkiG9w0BAQUFADAzMRUwEwYDVQQKEwxVTkktTVVFTkNIRU4xGjAYBgNV
+BAsTEU9yZ2FuaXphdGlvbmFsIENBMB4XDTA3MTIwNzE3MDUwMFoXDTE0MTIwOTA5
+NTEwMFowgYQxCzAJBgNVBAYTAkRFMQ8wDQYDVQQIEwZCYXllcm4xETAPBgNVBAcT
+CE11ZW5jaGVuMRUwEwYDVQQKEwxVbmkgTXVlbmNoZW4xDjAMBgNVBAsTBUlJSUE1
+MSowKAYDVQQDEyF3d3cyMDEudmVyd2FsdHVuZy51bmktbXVlbmNoZW4uZGUwgZ8w
+DQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALTVdvBA3KIdD0VLfxixDtU1G/jhcq8X
+DfDC0Yjfi3KFYSn22CRkvUlcqa0CVE2aPGriKE8tdE2gPlvXZ+hEN61hZs6r6I3X
+s4sFLq6+/D82RkZhn7BH7g56f09e+Hu1t2M8A1Xvkgu6XLqQmuj6uWsjZ1mgjwPB
+OnQqT3vgW1G7AgMBAAGjggI6MIICNjAdBgNVHQ4EFgQUVVcFMd7TaPxL2vZcbi3x
+IPOjxz4wHwYDVR0jBBgwFoAU/JFwaH0oVCDVtxM+qwouMBF72iswDAYDVR0TAQH/
+BAIwADCCAcwGC2CGSAGG+DcBCQQBBIIBuzCCAbcEAgEAAQH/Ex1Ob3ZlbGwgU2Vj
+dXJpdHkgQXR0cmlidXRlKHRtKRZDaHR0cDovL2RldmVsb3Blci5ub3ZlbGwuY29t
+L3JlcG9zaXRvcnkvYXR0cmlidXRlcy9jZXJ0YXR0cnNfdjEwLmh0bTCCAUigGgEB
+ADAIMAYCAQECAQAwCDAGAgEBAgEAAgEAoRoBAQAwCDAGAgEBAgEAMAgwBgIBAQIB
+AAIBAKIGAgEAAQH/o4IBBKBYAgECAgIA/wIBAAMNAIAAAAAAAAAAAAAAAAMJAIAA
+AAAAAAAAMBgwEAIBAAIIf/////////8BAQACBAbw30gwGDAQAgEAAgh/////////
+/wEBAAIEBvDfSKFYAgECAgIA/wIBAAMNAEAAAAAAAAAAAAAAAAMJAEAAAAAAAAAA
+MBgwEAIBAAIIf/////////8BAQACBBH6qE8wGDAQAgEAAgh//////////wEBAAIE
+EfqoT6JOMEwCAQICAQACAgD/Aw0AgAAAAAAAAAAAAAAAAwkAgAAAAAAAAAAwEjAQ
+AgEAAgh//////////wEBADASMBACAQACCH//////////AQEAMBYGA1UdJQEB/wQM
+MAoGCCsGAQUFBwMBMA0GCSqGSIb3DQEBBQUAA4IBAQCipW5PMaMdQuhI6PPJrUOM
+fBSOA1F769EZXR53O2CQVpefoc6Trtqhdn7G3aRzdJPDpjdxqETBTywYQNWdJGBG
+H8lixyUevZBX6GZlOU+m2ecP+DWNIKIaBdC+ZiMSHq2wLXxsZLYE6pj1shIGRvB7
+oV2m0czgsSETd1TmBMLc6MBuPKAByKjxnDanGUenv8xAJ1MIiQU78QJBvCN7qmx/
+DLqIuIy2AoYb2TnMV0fzR0ilyx8ULDz1sjFAMPV/Fwcg30FfLc4u4vAfT/lEolaB
+KRbgAsYR1w72j/61F44aODOWjT8Pv4Kr+auhkNIjlUxbf+IyRq3rWdIH0TvKd0KO
+</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+    </md:KeyDescriptor>
+    <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://www201.verwaltung.uni-muenchen.de/sp/Artifact/SOAP" index="1"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://www201.verwaltung.uni-muenchen.de/sp/SLO/Artifact"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://www201.verwaltung.uni-muenchen.de/sp/SLO/POST"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://www201.verwaltung.uni-muenchen.de/sp/SLO/Redirect"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://www201.verwaltung.uni-muenchen.de/sp/SLO/SOAP"/>
+    <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://www201.verwaltung.uni-muenchen.de/sp/NIM/Artifact"/>
+    <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://www201.verwaltung.uni-muenchen.de/sp/NIM/POST"/>
+    <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://www201.verwaltung.uni-muenchen.de/sp/NIM/Redirect"/>
+    <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://www201.verwaltung.uni-muenchen.de/sp/NIM/SOAP"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://www201.verwaltung.uni-muenchen.de/sp/SAML2/Artifact" index="3"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://www201.verwaltung.uni-muenchen.de/sp/SAML2/ECP" index="4"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://www201.verwaltung.uni-muenchen.de/sp/SAML2/POST" index="5"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://www201.verwaltung.uni-muenchen.de/sp/SAML2/POST-SimpleSign" index="6"/>
+  </md:SPSSODescriptor>
+
+</md:EntityDescriptor><md:EntityDescriptor ID="_ab0036e24bf8a0ab7dbca9c5e12c2213fb97ad4f" entityID="urn:portal.lmu.de:www202">
+
+  <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+  </md:Extensions>
+
+  <md:SPSSODescriptor AuthnRequestsSigned="1" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:Extensions>
+      <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://www202.verwaltung.uni-muenchen.de/sp/Login"/>
+    </md:Extensions>
+    <md:KeyDescriptor>
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:KeyName>www202.verwaltung.uni-muenchen.de</ds:KeyName>
+        <ds:X509Data>
+          <ds:X509SubjectName>CN=www202.verwaltung.uni-muenchen.de,OU=IIIA5,O=Uni Muenchen,L=Muenchen,ST=Bayern,C=DE</ds:X509SubjectName>
+          <ds:X509Certificate>MIIFDDCCA/SgAwIBAgIiAhwR/6OH4sy2Yn5ECJk5KrpOTaLP8M0xk2a75wdzAgIE
+CjANBgkqhkiG9w0BAQUFADAzMRUwEwYDVQQKEwxVTkktTVVFTkNIRU4xGjAYBgNV
+BAsTEU9yZ2FuaXphdGlvbmFsIENBMB4XDTA3MTIwNzE3MDgwMFoXDTE0MTIwOTA5
+NTEwMFowgYQxCzAJBgNVBAYTAkRFMQ8wDQYDVQQIEwZCYXllcm4xETAPBgNVBAcT
+CE11ZW5jaGVuMRUwEwYDVQQKEwxVbmkgTXVlbmNoZW4xDjAMBgNVBAsTBUlJSUE1
+MSowKAYDVQQDEyF3d3cyMDIudmVyd2FsdHVuZy51bmktbXVlbmNoZW4uZGUwgZ8w
+DQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAOuO6d/4dyFy1f87PQM3IT4HgwpKZ40e
+a+cPU+75XJrFKq2J1xf/IZwzCKjZZIjImrf5PjnFWCIB2U/gNZm2gk3wzK6/gtDS
+sOEJ92ClY7djsUYeUkh4G4On2831/eRHT23YLiFDcFwwd/rziN05FGne+iNbVAQy
+9YsSs4+bmUelAgMBAAGjggI6MIICNjAdBgNVHQ4EFgQUFQFeUPoE36fdGl950xzF
+MBfIuNcwHwYDVR0jBBgwFoAU/JFwaH0oVCDVtxM+qwouMBF72iswDAYDVR0TAQH/
+BAIwADCCAcwGC2CGSAGG+DcBCQQBBIIBuzCCAbcEAgEAAQH/Ex1Ob3ZlbGwgU2Vj
+dXJpdHkgQXR0cmlidXRlKHRtKRZDaHR0cDovL2RldmVsb3Blci5ub3ZlbGwuY29t
+L3JlcG9zaXRvcnkvYXR0cmlidXRlcy9jZXJ0YXR0cnNfdjEwLmh0bTCCAUigGgEB
+ADAIMAYCAQECAQAwCDAGAgEBAgEAAgEAoRoBAQAwCDAGAgEBAgEAMAgwBgIBAQIB
+AAIBAKIGAgEAAQH/o4IBBKBYAgECAgIA/wIBAAMNAIAAAAAAAAAAAAAAAAMJAIAA
+AAAAAAAAMBgwEAIBAAIIf/////////8BAQACBAbw30gwGDAQAgEAAgh/////////
+/wEBAAIEBvDfSKFYAgECAgIA/wIBAAMNAEAAAAAAAAAAAAAAAAMJAEAAAAAAAAAA
+MBgwEAIBAAIIf/////////8BAQACBBH6qE8wGDAQAgEAAgh//////////wEBAAIE
+EfqoT6JOMEwCAQICAQACAgD/Aw0AgAAAAAAAAAAAAAAAAwkAgAAAAAAAAAAwEjAQ
+AgEAAgh//////////wEBADASMBACAQACCH//////////AQEAMBYGA1UdJQEB/wQM
+MAoGCCsGAQUFBwMBMA0GCSqGSIb3DQEBBQUAA4IBAQB6WnDnZxY4OdmGkxibXCRp
+u/zwaUN+dX/YGhs5p38p/w+u4DxZlCEuf6z+ZJC9UpqrIlumjx6xXV6aJ4y0hSRB
+ln1lMCM9yIm6CjFu0r1NjRdf1rqytwI1U5xbOz+TaJ0K6UMES1dwshu1gZVhTpel
+rWSxd3wNIDS0RRmRgvSq/Xln5tBjO/gPgtNvyd4ZPXIubMJFU/NNZvBlRFOk1rB3
+rS/W771TAAzw7aVYgIPL3rUwtM95SJua73+1nAWMAF25a+czWUhWIFb9zVLhRxtl
+3RGy3RoUmEucTZ3kGVoD6xgGURhJ3iL7NpuColrbLttWgLzafsesuezjlOzXbwha
+</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+    </md:KeyDescriptor>
+    <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://www202.verwaltung.uni-muenchen.de/sp/Artifact/SOAP" index="1"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://www202.verwaltung.uni-muenchen.de/sp/SLO/Artifact"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://www202.verwaltung.uni-muenchen.de/sp/SLO/POST"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://www202.verwaltung.uni-muenchen.de/sp/SLO/Redirect"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://www202.verwaltung.uni-muenchen.de/sp/SLO/SOAP"/>
+    <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://www202.verwaltung.uni-muenchen.de/sp/NIM/Artifact"/>
+    <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://www202.verwaltung.uni-muenchen.de/sp/NIM/POST"/>
+    <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://www202.verwaltung.uni-muenchen.de/sp/NIM/Redirect"/>
+    <md:ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://www202.verwaltung.uni-muenchen.de/sp/NIM/SOAP"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://www202.verwaltung.uni-muenchen.de/sp/SAML2/Artifact" index="3"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://www202.verwaltung.uni-muenchen.de/sp/SAML2/ECP" index="4"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://www202.verwaltung.uni-muenchen.de/sp/SAML2/POST" index="5"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://www202.verwaltung.uni-muenchen.de/sp/SAML2/POST-SimpleSign" index="6"/>
+  </md:SPSSODescriptor>
+
+</md:EntityDescriptor></md:EntitiesDescriptor>
